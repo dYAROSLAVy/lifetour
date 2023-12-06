@@ -1,0 +1,14 @@
+.slider-controls {
+  display: flex;
+  gap: 4px;
+  align-items: end;
+}
+
+.slider-controls .slider-controls__btn {
+  align-items: center;
+  min-width: auto;
+  width: 37px;
+  height: 35px;
+  padding: 0;
+  border: none;
+}
