@@ -1,0 +1,54 @@
+.learning {
+  padding: 20px 0;
+  overflow-x: hidden;
+}
+
+.learning__title {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.learning__text {
+  width: 70%;
+
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
+
+.learning__text p {
+  margin: 0;
+}
+
+.learning__slider-wrapper {
+  &:not(:last-child) {
+    margin-bottom: 58px;
+  }
+}
+
+.learning__slider-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.learning__slider-title {
+  padding-bottom: 32px;
+}
+
+.learning__process-title {
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+
+.learning__process-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
