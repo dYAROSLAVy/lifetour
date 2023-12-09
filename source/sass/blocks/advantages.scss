@@ -1,0 +1,34 @@
+.advantages {
+  overflow-x: hidden;
+  padding: 25px 0 41px;
+}
+
+.advantages .container {
+  overflow-x: hidden;
+}
+
+.advantages__title {
+  width: 100%;
+  text-align: center;
+
+  &:not(:last-child) {
+    margin-bottom: 47px;
+  }
+}
+
+.advantages__title > .title-shadow__back {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advantages__slider {
+  overflow: visible;
+
+  &:not(:last-child) {
+    margin-bottom: 50px;
+  }
+}
+
+.advantages__slider-controls {
+  justify-content: center;
+}

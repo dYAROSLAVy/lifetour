@@ -1,0 +1,33 @@
+.gallery {
+  padding: 40px 0 3px;
+}
+
+.gallery__title {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.gallery__text-content {
+  &:not(:last-child) {
+    margin-bottom: 45px;
+  }
+}
+
+
+.gallery__slider {
+  overflow: visible;
+}
+
+.gallery__text-content p {
+  width: 60%;
+  margin: 0;
+}
+
+.gallery__slider-controls {
+  align-items: center;
+}
+
+.gallery__slider-controls button {
+  margin-bottom: 2px;
+}

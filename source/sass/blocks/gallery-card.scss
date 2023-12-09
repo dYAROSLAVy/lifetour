@@ -1,0 +1,11 @@
+.gallery-card {
+  display: flex;
+  width: auto;
+  height: 449px;
+}
+
+.gallery-card picture,
+.gallery-card img {
+  display: flex;
+  width: 100%;
+}

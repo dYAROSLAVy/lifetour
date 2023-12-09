@@ -2,10 +2,7 @@
   padding: 100px 0;
 }
 
-.tours__top-inner {
-  display: flex;
-  justify-content: space-between;
-
+.tours__slider-header {
   &:not(:last-child) {
     margin-bottom: 50px;
   }
