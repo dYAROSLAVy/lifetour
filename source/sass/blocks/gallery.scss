@@ -2,6 +2,10 @@
   padding: 40px 0 3px;
 }
 
+.gallery .container {
+  overflow-x: hidden;
+}
+
 .gallery__title {
   &:not(:last-child) {
     margin-bottom: 24px;

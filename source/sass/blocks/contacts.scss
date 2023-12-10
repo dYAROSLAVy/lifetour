@@ -1,0 +1,46 @@
+.contacts {
+  padding: 65px 0 95px;
+}
+
+.contacts__inner {
+  display: grid;
+  grid-template-columns: 41.66% 58.33%;
+}
+
+.contacts__info {
+  display: grid;
+  gap: 49px;
+}
+
+.contacts__title {
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+
+.contacts__text-content p {
+  margin: 0;
+}
+
+.contacts__address {
+  font-style: normal;
+}
+
+.contacts__list {
+  display: grid;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contacts__map {
+  display: flex;
+  padding: 98px 0 0 115px;
+}
+
+.contacts__map img,
+.contacts__map picture {
+  display: flex;
+  width: 100%;
+}

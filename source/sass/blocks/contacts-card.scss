@@ -1,0 +1,23 @@
+.contacts-card {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 30px;
+}
+
+.contacts-card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts-card__link-wrapper {
+  display: grid;
+  gap: 8px;
+}
+
+.contacts-card__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+}

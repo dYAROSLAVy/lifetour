@@ -1,0 +1,13 @@
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba($color-elephant, 0.3);
+
+  &--primary {
+    width: 30px;
+    height: 30px;
+  }
+}
