@@ -11,6 +11,7 @@ const learningSlider = () => {
     },
     breakpoints: {
       1200: {
+        initialSlide: 1,
         slidesPerView: 4,
         spaceBetween: 20,
         allowTouchMove: false,

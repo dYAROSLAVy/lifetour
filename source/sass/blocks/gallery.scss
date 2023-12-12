@@ -1,9 +1,6 @@
 .gallery {
-  padding: 40px 0 3px;
-}
-
-.gallery .container {
   overflow-x: hidden;
+  padding: 40px 0 3px;
 }
 
 .gallery__title {
@@ -12,14 +9,8 @@
   }
 }
 
-.gallery__text-content {
-  &:not(:last-child) {
-    margin-bottom: 45px;
-  }
-}
-
-
 .gallery__slider {
+  margin-top: 45px;
   overflow: visible;
 }
 

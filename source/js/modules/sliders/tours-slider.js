@@ -11,6 +11,7 @@ const toursSlider = () => {
     },
     breakpoints: {
       1200: {
+        initialSlide: 1,
         slidesPerView: 3,
         spaceBetween: 30,
         allowTouchMove: false,

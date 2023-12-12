@@ -1,7 +1,13 @@
 .gallery-card {
-  display: flex;
-  width: 275px;
+  display: grid;
+  width: 272px;
   height: 449px;
+
+  &--two-rows {
+    grid-template-rows: 179px 265px;
+    gap: 5px;
+    width: 298px;
+  }
 }
 
 .gallery-card picture,

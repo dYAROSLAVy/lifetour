@@ -1,8 +1,32 @@
 .hero {
-  padding: 200px 0 80px;
+  padding: 200px 0 56px;
   overflow: hidden;
 }
 
 .hero__slider {
   overflow: visible;
+}
+
+.hero__slider .swiper-pagination {
+  width: auto;
+  left: auto;
+  right: 110px;
+  bottom: 0;
+}
+
+.hero__slider .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  opacity: 1;
+}
+
+// Перебивает свойства свайпера
+.hero__slider .swiper-pagination .swiper-pagination-bullet {
+  margin: 0 10px;
+}
+
+.hero__slider .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
 }
