@@ -4,7 +4,7 @@ const reviewsSlider = () => {
   const buttonNext = document.querySelector('[data-reviews-slider-btn-next]');
 
   return new window.Swiper(swiperWrapper, {
-    loop: false,
+    loop: true,
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,

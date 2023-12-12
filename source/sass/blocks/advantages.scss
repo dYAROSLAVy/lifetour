@@ -3,10 +3,6 @@
   padding: 25px 0 41px;
 }
 
-.advantages .container {
-  overflow-x: hidden;
-}
-
 .advantages__title {
   width: 100%;
   text-align: center;
@@ -31,4 +27,11 @@
 
 .advantages__slider-controls {
   justify-content: center;
+  pointer-events: none;
+  opacity: 0.1;
+
+  @media (max-width: 2038px) {
+    pointer-events: all;
+    opacity: 1;
+  }
 }

@@ -11,6 +11,8 @@ const gallerySlider = () => {
     },
     breakpoints: {
       1200: {
+        slidesPerGroup: 2,
+        slidesPerGroupSkip: 2,
         slidesPerView: 'auto',
         spaceBetween: 5,
         allowTouchMove: false,
