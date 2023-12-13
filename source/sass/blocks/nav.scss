@@ -1,8 +1,39 @@
 .nav {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 21px;
   padding: 0;
   list-style: none;
   line-height: 16px;
+}
+
+.nav--primary a {
+  color: $color-default-white;
+
+  @include hover {
+    border-bottom-color: $color-default-white;
+  }
+
+  @include focus {
+    border-color: $color-default-white;
+    outline-offset: 2px;
+  }
+}
+
+.nav__link {
+  padding: 2px 4px;
+  border: 1px solid transparent;
+
+  @include hover {
+    border-bottom-color: $color-elephant;
+  }
+
+  @include focus {
+    border-color: $color-elephant;
+    outline-offset: 2px;
+  }
+
+  @include active {
+    border-color: transparent;
+  }
 }

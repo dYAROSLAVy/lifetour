@@ -11,7 +11,7 @@ const heroSlider = () => {
     breakpoints: {
       1200: {
         slidesPerView: 1,
-        allowTouchMove: true,
+        allowTouchMove: false,
       },
     },
   });

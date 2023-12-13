@@ -1,3 +1,15 @@
 .logo-link {
   display: flex;
+
+  @include hover-focus {
+    &[href] {
+      opacity: 0.7;
+    }
+  }
+
+  @include active {
+    &[href] {
+      opacity: 0.3;
+    }
+  }
 }

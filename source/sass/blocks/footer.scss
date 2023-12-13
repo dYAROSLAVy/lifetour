@@ -27,8 +27,24 @@
 }
 
 .footer__link {
+  width: fit-content;
+  margin: 0 auto;
   text-align: center;
   font-size: 12px;
   font-weight: 300;
   line-height: 12px;
+  cursor: pointer;
+
+  @include hover-focus {
+    opacity: 0.5;
+  }
+
+  @include active {
+    opacity: 0.1;
+  }
+}
+
+
+.footer__link.disabled {
+  opacity: 0.1;
 }

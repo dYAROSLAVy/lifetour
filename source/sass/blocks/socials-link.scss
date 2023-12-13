@@ -10,4 +10,19 @@
     width: 30px;
     height: 30px;
   }
+
+  @include hover-focus {
+    border-color: $color-elephant;
+    outline-offset: 2px;
+  }
+
+  @include active {
+    background-color: $color-navy-blue;
+    border-color: $color-navy-blue;
+    color: $color-default-white;
+  }
+}
+
+.socials-link.disabled {
+  color: rgba($color-elephant, 0.3);
 }

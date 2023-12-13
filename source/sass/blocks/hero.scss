@@ -30,3 +30,20 @@
 .hero__slider .swiper-pagination-bullet-active {
   background-color: $color-default-white;
 }
+
+
+
+.hero__slider .swiper-pagination-bullet {
+  @include hover {
+    background-color: $color-nobel;
+  }
+
+  @include focus {
+    outline: 1px solid rgba($color-default-white, 0.5);
+    outline-offset: 1px;
+  }
+
+  @include active {
+    background-color: rgba($color-default-white, 0.5);
+  }
+}

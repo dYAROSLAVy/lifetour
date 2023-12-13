@@ -15,4 +15,32 @@
   border-radius: 2px;
   border: 1px solid rgba($color-navy-blue, 0.1);
   background-color: $color-default-white;
+
+  @include hover {
+    border-color: $color-navy-blue;
+
+    &::placeholder {
+      color: $color-navy-blue;
+    }
+  }
+
+  &:focus,
+  :not(:placeholder-shown) {
+    border-color: $color-resolution-blue;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    border-color: rgba($color-navy-blue, 0.1);
+    pointer-events: none;
+    user-select: none;
+
+    &::placeholder {
+      color: rgba($color-navy-blue, 0.5);
+    }
+  }
+
+  &:user-invalid {
+    border-color: $color-torch-red;
+  }
 }

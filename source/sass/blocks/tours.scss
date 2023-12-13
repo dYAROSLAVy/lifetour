@@ -23,9 +23,26 @@
   justify-content: center;
   align-items: center;
   gap: 12px;
+  width: max-content;
   margin: 0 auto;
   padding: 10px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.64px;
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+  }
+
+  @include active {
+    color: $color-navy-blue;
+  }
+}
+
+.tours__link.disabled {
+  color: $color-navy-blue;
+}
+
+.tours__link.disabled svg {
+  opacity: 0.1;
 }

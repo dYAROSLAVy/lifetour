@@ -109,6 +109,21 @@
   background: transparent;
   border: 1px solid $color-default-white;
   color: $color-default-white;
+
+  &:disabled {
+    pointer-events: none;
+    user-select: none;
+    border-color: rgba($color-navy-blue , 0.1);
+  }
+
+  @include hover-focus {
+    border-color: $color-resolution-blue;
+    outline-offset: 2px;
+  }
+
+  @include active {
+    background-color: $color-resolution-blue;
+  }
 }
 
 .hero-card__video-button svg {
@@ -116,4 +131,18 @@
   top: 50%;
   left: 55%;
   transform: translateX(-50%) translateY(-50%);
+}
+
+.hero-card__video-button:hover path,
+.hero-card__video-button:focus path {
+  stroke: $color-default-black;
+}
+
+.hero-card__video-button:active path {
+  stroke: $color-default-white;
+}
+
+.hero-card__video-button:disabled path {
+  fill: $color-navy-blue;
+  stroke: $color-navy-blue;
 }
