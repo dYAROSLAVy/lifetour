@@ -1,9 +1,11 @@
+let desktop = window.matchMedia('(min-width: 1200px)');
+
 const advantagesSlider = () => {
   const swiperWrapper = document.querySelector('[data-advantages-slider]');
   const buttonPrev = document.querySelector('[data-advantages-slider-btn-prev]');
   const buttonNext = document.querySelector('[data-advantages-slider-btn-next]');
 
-  return new window.Swiper(swiperWrapper, {
+  const slider = new window.Swiper(swiperWrapper, {
     loop: false,
     navigation: {
       nextEl: buttonNext,
@@ -18,6 +20,12 @@ const advantagesSlider = () => {
       },
     },
   });
+
+  if (desktop.matches) {
+    return slider;
+  } else {
+    return slider.destroy();
+  }
 };
 
 export {advantagesSlider};

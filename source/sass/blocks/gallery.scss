@@ -1,28 +1,54 @@
 .gallery {
   overflow-x: hidden;
-  padding: 40px 0 3px;
+  padding: 0 0 3px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .gallery__title {
   &:not(:last-child) {
     margin-bottom: 24px;
+
+    @include vp-1199 {
+      margin-bottom: 17px;
+    }
   }
 }
 
 .gallery__slider {
   margin-top: 45px;
   overflow: visible;
+
+  @include vp-1199 {
+    margin-top: 21px;
+  }
 }
 
 .gallery__text-content p {
   width: 60%;
   margin: 0;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .gallery__slider-controls {
   align-items: center;
+
+  @include vp-1199 {
+    align-items: end;
+  }
 }
 
-.gallery__slider-controls button {
+.gallery__text-content .gallery__slider-controls button {
   margin-bottom: 2px;
+
+  @include vp-1199 {
+    width: 33.80px;
+    margin: 0;
+  }
 }

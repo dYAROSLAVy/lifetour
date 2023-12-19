@@ -10,5 +10,9 @@
   width: 37px;
   height: 35px;
   padding: 0;
-  border: none;
+  border: 1px solid transparent;
+
+  @include hover-focus {
+    color: $color-resolution-blue;
+  }
 }

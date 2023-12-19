@@ -15,6 +15,11 @@ const reviewsSlider = () => {
         spaceBetween: 120,
         allowTouchMove: false,
       },
+      768: {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        allowTouchMove: true,
+      },
     },
   });
 };

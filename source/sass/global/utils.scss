@@ -34,6 +34,11 @@
   clip-path: inset(100%);
 }
 
+.disabled {
+  pointer-events: none;
+  user-select: none;
+}
+
 .scroll-lock-ios {
   position: fixed;
 

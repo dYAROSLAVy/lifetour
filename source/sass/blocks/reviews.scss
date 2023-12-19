@@ -1,15 +1,27 @@
 .reviews {
-  padding: 17px 0;
+  padding: 30px 0 0;
+
+  @include vp-1199 {
+    padding: 37px 0;
+  }
 }
 
 .reviews__slider-header {
   &:not(:last-child) {
     margin-bottom: 27px;
+
+    @include vp-1199 {
+      margin-bottom: 36px;
+    }
   }
 }
 
 .reviews__slider {
   padding: 10px;
+
+  @include vp-1199 {
+    padding: 20px 0;
+  }
 }
 
 .reviews__slider-controls {
@@ -18,4 +30,8 @@
 
 .reviews__slider-controls button {
   margin-bottom: 3px;
+
+  @include vp-1199 {
+    margin: 6px 0 0;
+  }
 }

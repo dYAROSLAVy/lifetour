@@ -1,10 +1,22 @@
 .form__inner {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    gap: 11px;
+    width: 270.84px;
+    margin: 0 auto;
+  }
 }
 
 .form__input {
   width: 360px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
 }
 
 .form__input input {
@@ -15,4 +27,37 @@
   border-radius: 2px;
   border: 1px solid rgba($color-navy-blue, 0.1);
   background-color: $color-default-white;
+
+  @include hover {
+    border-color: $color-navy-blue;
+
+    &::placeholder {
+      color: $color-navy-blue;
+    }
+  }
+
+  &:focus,
+  :not(:placeholder-shown) {
+    border-color: $color-resolution-blue;
+    outline-offset: 2px;
+  }
+
+  &:disabled {
+    border-color: rgba($color-navy-blue, 0.1);
+    pointer-events: none;
+    user-select: none;
+
+    &::placeholder {
+      color: rgba($color-navy-blue, 0.5);
+    }
+  }
+
+  &:user-invalid {
+    border-color: $color-torch-red;
+  }
+
+  @include vp-1199 {
+    height: 50px;
+    padding: 15px 15.27px;
+  }
 }

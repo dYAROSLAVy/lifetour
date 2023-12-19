@@ -1,6 +1,6 @@
 .header {
   position: absolute;
-  width: calc(100% - 240px);
+  width: calc(100% - 40px);
   padding: 32px 20px;
   background-color: $color-navy-blue;
   color: $color-default-white;
@@ -8,7 +8,23 @@
 
   &--static {
     position: static;
+  }
+
+  @include vp-1199 {
     width: 100%;
+    left: 0;
+    padding: 20px 45px;
+  }
+}
+
+.header__burger {
+  display: none;
+  width: 26px;
+  height: 26px;
+
+  @include vp-1199 {
+    display: block;
+    margin-right: 100px;
   }
 }
 
@@ -16,17 +32,16 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+
+  @include vp-1199 {
+    justify-content: space-between;
+  }
 }
 
-.header__nav {
+.header__nav.nav {
   margin: 0 auto;
-}
 
-.header__nav a {
-  padding: 20px 0;
-  color: $color-default-white;
-}
-
-.header__tel {
-  color: $color-default-white;
+  @include vp-1199 {
+    display: none;
+  }
 }

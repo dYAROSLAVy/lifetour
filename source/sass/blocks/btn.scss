@@ -2,23 +2,33 @@
   display: inline-flex;
   justify-content: center;
   min-width: 180px;
-  padding: 20px;
+  padding: 19px;
   color: $color-default-white;
   background-color: $color-navy-blue;
-  border: none;
+  border: 1px solid transparent;
   cursor: pointer;
   font-weight: 500;
   line-height: 16px;
-
-  // transition: opacity $trans-default;
+  transition: opacity $trans-default;
 
   &:disabled {
-    opacity: 0.5;
-
+    background-color: $color-nobel;
     pointer-events: none;
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    background-color: $color-default-white;
+    color: $color-resolution-blue;
+    border-color: $color-resolution-blue;
+    outline-offset: 2px;
   }
+
+  @include active {
+    color: $color-default-white;
+    background-color: $color-resolution-blue;
+  }
+}
+
+.btn.disabled {
+  background-color: $color-nobel;
 }

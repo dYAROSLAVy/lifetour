@@ -2,4 +2,11 @@
   margin: 0;
   font-size: 21px;
   line-height: 21px;
+
+  &--primary {
+    @include vp-1199 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
 }

@@ -1,5 +1,4 @@
 .hero {
-  padding: 200px 0 56px;
   overflow: hidden;
 }
 
@@ -10,23 +9,39 @@
 .hero__slider .swiper-pagination {
   width: auto;
   left: auto;
-  right: 110px;
+  right: 10px;
   bottom: 0;
+
+  @include vp-1199 {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
-.hero__slider .swiper-pagination-bullet {
+.hero__slider .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
+  margin: 0 10px;
   background-color: transparent;
   border: 1px solid $color-default-white;
   opacity: 1;
 }
 
-// Перебивает свойства свайпера
-.hero__slider .swiper-pagination .swiper-pagination-bullet {
-  margin: 0 10px;
+.hero__slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
 }
 
-.hero__slider .swiper-pagination-bullet-active {
-  background-color: $color-default-white;
+.hero__slider .swiper-pagination-bullet {
+  @include hover {
+    background-color: $color-nobel;
+  }
+
+  @include focus {
+    outline: 1px solid rgba($color-default-white, 0.5);
+    outline-offset: 1px;
+  }
+
+  @include active {
+    background-color: rgba($color-default-white, 0.5);
+  }
 }

@@ -2,6 +2,27 @@
   position: relative;
   width: 90%;
   padding-top: 23px;
+
+  &--primary {
+    @include vp-1199 {
+      padding-top: 18px;
+    }
+  }
+}
+
+.title-shadow--primary .title-shadow__front {
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+}
+
+.title-shadow--primary .title-shadow__back {
+  @include vp-1199 {
+    top: 5px;
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .title-shadow__front {
