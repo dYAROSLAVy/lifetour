@@ -2,17 +2,32 @@
   display: grid;
   grid-template-columns: 26px 1fr;
   gap: 30px;
+
+  @include vp-1199 {
+    align-items: start;
+    gap: 10px;
+    grid-template-columns: 24px 1fr;
+  }
 }
 
 .contacts-card__icon {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include vp-1199 {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .contacts-card__link-wrapper {
   display: grid;
   gap: 8px;
+
+  @include vp-1199 {
+    gap: 6px;
+  }
 }
 
 .contacts-card__title {
@@ -20,6 +35,11 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .contacts-card a {
@@ -31,5 +51,17 @@
 
   @include active {
     opacity: 0.1;
+  }
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.contacts-card__link-wrapper span {
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
   }
 }

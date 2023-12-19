@@ -4,6 +4,10 @@
   min-height: 760px;
   padding: 40px 0 45px;
   color: $color-default-white;
+
+  @include vp-1199 {
+    min-height: 680px;
+  }
 }
 
 .questions-form .container {
@@ -38,6 +42,10 @@
 
   &:not(:last-child) {
     margin-bottom: 40px;
+
+    @include vp-1199 {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -50,12 +58,21 @@
   &:not(:last-child) {
     margin-bottom: 17px;
   }
+
+  @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
 }
 
 .questions-form__text-content p {
   margin: 0;
 
-  &:not(:last-child) {
-    margin-bottom: 20px;
+  @include vp-1199 {
+    width: 300px;
   }
 }

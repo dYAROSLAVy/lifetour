@@ -1,10 +1,16 @@
 .nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 21px;
   padding: 0;
   list-style: none;
   line-height: 16px;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .nav--primary a {

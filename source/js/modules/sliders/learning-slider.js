@@ -12,9 +12,15 @@ const learningSlider = () => {
     breakpoints: {
       1200: {
         initialSlide: 1,
-        slidesPerView: 4,
+        slidesPerView: 'auto',
         spaceBetween: 20,
         allowTouchMove: false,
+      },
+      768: {
+        initialSlide: 1,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        allowTouchMove: true,
       },
     },
   });

@@ -1,10 +1,22 @@
 .form__inner {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    gap: 11px;
+    width: 270.84px;
+    margin: 0 auto;
+  }
 }
 
 .form__input {
   width: 360px;
+
+  @include vp-1199 {
+    width: 100%;
+  }
 }
 
 .form__input input {
@@ -42,5 +54,10 @@
 
   &:user-invalid {
     border-color: $color-torch-red;
+  }
+
+  @include vp-1199 {
+    height: 50px;
+    padding: 15px 15.27px;
   }
 }

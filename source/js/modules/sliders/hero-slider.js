@@ -13,6 +13,9 @@ const heroSlider = () => {
         slidesPerView: 1,
         allowTouchMove: false,
       },
+      0: {
+        allowTouchMove: true,
+      },
     },
   });
 };

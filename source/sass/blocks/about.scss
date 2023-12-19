@@ -1,6 +1,10 @@
 .about {
   position: relative;
-  padding: 34px 0 15px;
+  padding: 56px 0 2px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .about__picture {
@@ -14,6 +18,12 @@
   max-height: 474px;
   pointer-events: none;
   user-select: none;
+
+  @include vp-1199 {
+    top: 60px;
+    min-width: 541.68px;
+    max-height: 350px;
+  }
 }
 
 .about__picture picture,
@@ -26,17 +36,33 @@
   &:not(:last-child) {
     margin-bottom: 56px;
   }
+
+  @include vp-1199 {
+    padding-left: 6px;
+
+    &:not(:last-child) {
+      margin-bottom: 35px;
+    }
+  }
 }
 
 .about__right-column {
-  width: 48.7%;
+  width: 48.75%;
   margin-left: auto;
   display: flex;
   flex-direction: column;
+
+  @include vp-1199 {
+    width: 39.82%;
+  }
 }
 
 .about__text-wrapper {
   padding: 0 0 79px;
+
+  @include vp-1199 {
+    padding: 0 0 2px;
+  }
 }
 
 .about__text-wrapper h3 {
@@ -46,6 +72,15 @@
 
   &:not(:last-child) {
     margin-bottom: 16px;
+  }
+
+  @include vp-1199 {
+    font-size: 18px;
+    line-height: 18px;
+
+    &:not(:last-child) {
+      margin-bottom: 11px;
+    }
   }
 }
 

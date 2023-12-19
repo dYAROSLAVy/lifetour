@@ -1,6 +1,10 @@
 .logo-link {
   display: flex;
 
+  @include vp-1199 {
+    height: 42px;
+  }
+
   @include hover-focus {
     &[href] {
       opacity: 0.7;

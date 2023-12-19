@@ -1,10 +1,41 @@
 .tours {
+  position: relative;
   padding: 100px 0;
+
+  @include vp-1199 {
+    padding: 45px 0;
+  }
+}
+
+.tours__decor {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 602px;
+  height: 1630px;
+  pointer-events: none;
+  user-select: none;
+
+  @include vp-1199 {
+    height: 1364px;
+  }
+}
+
+.tours__decor img,
+.tours__decor picture {
+  display: flex;
+  width: 100%;
 }
 
 .tours__slider-header {
   &:not(:last-child) {
     margin-bottom: 50px;
+
+    @include vp-1199 {
+      margin-bottom: 22px;
+    }
   }
 }
 
@@ -15,6 +46,10 @@
 .tours__slider {
   &:not(:last-child) {
     margin-bottom: 53px;
+
+    @include vp-1199 {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -22,7 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   width: max-content;
   margin: 0 auto;
   padding: 10px;
@@ -37,6 +72,10 @@
   @include active {
     color: $color-navy-blue;
   }
+}
+
+.tours__link span {
+  margin-left: 3px;
 }
 
 .tours__link.disabled {

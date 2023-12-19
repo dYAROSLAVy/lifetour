@@ -1,11 +1,20 @@
 .learning {
-  padding: 20px 0;
-  overflow-x: hidden;
+  position: relative;
+  padding: 20px 0 0;
+  overflow-x: clip;
+
+  @include vp-1199 {
+    padding: 45px 0;
+  }
 }
 
 .learning__title {
   &:not(:last-child) {
     margin-bottom: 32px;
+
+    @include vp-1199 {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -14,6 +23,14 @@
 
   &:not(:last-child) {
     margin-bottom: 60px;
+  }
+
+  @include vp-1199 {
+    width: 80%;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -24,12 +41,20 @@
 .learning__slider-wrapper {
   &:not(:last-child) {
     margin-bottom: 58px;
+
+    @include vp-1199 {
+      margin-bottom: 26px;
+    }
   }
 }
 
 .learning__slider-title-wrapper {
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @include vp-1199 {
+      margin-bottom: 30px;
+    }
   }
 }
 
@@ -40,12 +65,66 @@
 .learning__process-title {
   &:not(:last-child) {
     margin-bottom: 23px;
+
+    @include vp-1199 {
+      margin-bottom: 37px;
+    }
   }
 }
 
 .learning__process-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @include vp-1199 {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 29px 0;
+    grid-auto-flow: dense;
+  }
+}
+
+.learning__process-item {
+  display: flex;
+}
+
+.learning__process-item:nth-child(4n)>.process-card,
+.learning__process-item:nth-child(4n-1)>.process-card {
+  @include vp-1199 {
+    flex-direction: column-reverse;
+    gap: 13px;
+    padding: 3px 0 2px;
+  }
+}
+
+.learning__process-item:nth-child(4n) {
+  @include vp-1199 {
+    grid-column: 1;
+  }
+}
+
+.learning__process-item:nth-child(4n-1) {
+  @include vp-1199 {
+    grid-column: 2;
+  }
+}
+
+.learning__decor {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: -170px;
+  display: flex;
+  width: 620px;
+  height: 280px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.learning__decor img,
+.learning__decor picture {
+  display: flex;
 }

@@ -1,11 +1,17 @@
 .process-card {
   position: relative;
   display: flex;
+  gap: 3px;
   width: 253.33px;
-  min-height: 102px;
-  padding: 3px 0 10px;
+  padding: 3px 0 8px;
   flex-direction: column;
   justify-content: space-between;
+
+  @include vp-1199 {
+    width: 345px;
+    min-height: auto;
+    gap: 11px;
+  }
 }
 
 .process-card__text-wrapper {
@@ -15,14 +21,20 @@
 }
 
 .process-card__icon-wrapper {
+  flex-shrink: 0;
   margin-top: 3px;
   width: 25px;
   height: 25px;
 }
 
-
 .process-card__text {
   margin: 0;
+
+  @include vp-1199 {
+    font-size: 14px;
+    line-height: 22px;
+    width: 70%;
+  }
 }
 
 .process-card__decor {

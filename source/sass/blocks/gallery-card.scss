@@ -3,10 +3,30 @@
   width: 272px;
   height: 449px;
 
+  &--primary {
+    width: 275px;
+  }
+
+  &--secondary {
+    width: 276px;
+  }
+
   &--two-rows {
     grid-template-rows: 179px 265px;
     gap: 5px;
     width: 298px;
+  }
+
+  @include vp-1199 {
+    width: 252.66px;
+    height: 450px;
+
+
+    &--two-rows {
+      grid-template-rows: 180px 265px;
+      gap: 5px;
+      width: 252.66px;
+    }
   }
 }
 

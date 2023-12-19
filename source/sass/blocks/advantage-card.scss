@@ -3,14 +3,23 @@
   flex-direction: column;
   align-items: center;
   width: 380px;
-  height: 329px;
+  min-height: 329px;
   border: 1px solid rgba($color-navy-blue, $alpha: 0.1);
   padding: 39px 19px;
   text-align: center;
+  background-color: $color-default-white;
+
+  @include vp-1199 {
+    width: auto;
+    min-width: 324px;
+    min-height: 340px;
+    padding: 29px 19px;
+  }
 }
 
 .advantage-card__picture {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 54px;
@@ -20,6 +29,15 @@
 
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  @include vp-1199 {
+    width: 48px;
+    height: 48px;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -32,10 +50,23 @@
   &:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .advantage-card__text-wrapper p {
   margin: 0;
   font-size: 14px;
   line-height: 22px;
+}
+
+.advantage-card__text-wrapper h3 > br {
+  display: none;
+
+  @include vp-1199 {
+    display: block;
+  }
 }

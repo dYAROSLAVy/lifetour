@@ -12,9 +12,19 @@ const toursSlider = () => {
     breakpoints: {
       1200: {
         initialSlide: 1,
-        slidesPerView: 3,
+        slidesPerView: 'auto',
         spaceBetween: 30,
         allowTouchMove: false,
+      },
+      768: {
+        initialSlide: 1,
+        slidesPerView: 'auto',
+        spaceBetween: 18,
+      },
+      0: {
+        initialSlide: 1,
+        slidesPerView: 1,
+        allowTouchMove: true,
       },
     },
   });

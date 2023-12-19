@@ -17,6 +17,13 @@ const gallerySlider = () => {
         spaceBetween: 5,
         allowTouchMove: false,
       },
+      768: {
+        slidesPerGroup: 2,
+        slidesPerGroupSkip: 2,
+        slidesPerView: 'auto',
+        spaceBetween: 5,
+        allowTouchMove: true,
+      },
     },
   });
 };

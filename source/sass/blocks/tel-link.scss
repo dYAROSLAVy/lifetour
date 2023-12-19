@@ -1,7 +1,13 @@
 .tel-link {
+  padding-top: 3px;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+
+  @include vp-1199 {
+    font-size: 16px;
+    line-height: 16px;
+  }
 
   @include hover-focus {
     color: $color-resolution-blue;
