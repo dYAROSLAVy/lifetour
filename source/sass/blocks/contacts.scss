@@ -27,6 +27,14 @@
       margin-bottom: 39px;
     }
   }
+
+  @include vp-767 {
+    gap: 30px;
+
+    &:not(:last-child) {
+      margin-bottom: 28px;
+    }
+  }
 }
 
 .contacts__title {
@@ -36,6 +44,10 @@
     @include vp-1199 {
       margin-bottom: 18px;
     }
+
+    @include vp-767 {
+      margin-bottom: 12px;
+    }
   }
 }
 
@@ -44,6 +56,12 @@
 
   @include vp-1199 {
     width: 80%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 
@@ -63,6 +81,10 @@
     flex-wrap: wrap;
     gap: 39.3px;
   }
+
+  @include vp-767 {
+    gap: 30px;
+  }
 }
 
 .contacts__map {
@@ -72,9 +94,14 @@
   @include vp-1199 {
     position: relative;
     left: -45px;
-    width: calc(100vw);
+    width: 100vw;
     height: 340px;
     padding: 0;
+  }
+
+  @include vp-767 {
+    left: -15px;
+    height: 320px;
   }
 }
 

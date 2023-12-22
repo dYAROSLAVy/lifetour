@@ -9,6 +9,11 @@
     width: 270.84px;
     margin: 0 auto;
   }
+
+  @include vp-767 {
+    gap: 8px;
+    width: auto;
+  }
 }
 
 .form__input {

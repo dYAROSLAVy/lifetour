@@ -15,6 +15,11 @@
     min-width: 212.66px;
     min-height: 388px;
   }
+
+  @include vp-767 {
+    min-width: 320px;
+    min-height: 356px;
+  }
 }
 
 .instructor-card__picture-wrapper {
@@ -26,6 +31,7 @@
 .instructor-card__picture-wrapper picture,
 .instructor-card__picture-wrapper img {
   display: flex;
+  width: 100%;
 }
 
 .instructor-card__top-inner {

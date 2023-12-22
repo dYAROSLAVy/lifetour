@@ -21,38 +21,40 @@
         <div class="container container--relative">
           <header class="header">
             <div class="header__inner">
-              <div class="header__burger">
-                <button type="button">
-                  <span class="visually-hidden">Кнопка бургероного меню.</span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
-              <span class="logo-link">
+              <span class="header__logo logo-link">
                 <img src="img/svg/logo.svg" alt="Логотип сайта" width="205" height="62">
               </span>
-              <ul class="header__nav nav nav--primary">
-                <li>
-                  <a class="nav__link" href="#">Туры</a>
-                </li>
-                <li>
-                  <a class="nav__link" href="#">Обучение</a>
-                </li>
-                <li>
-                  <a class="nav__link" href="#">О нас</a>
-                </li>
-                <li>
-                  <a class="nav__link" href="#">Отзывы</a>
-                </li>
-                <li>
-                  <a class="nav__link" href="#">Фотографии</a>
-                </li>
-                <li>
-                  <a class="nav__link" href="#">Контакты</a>
-                </li>
-              </ul>
-              <a class="tel-link tel-link--primary" href="tel:+88007253232">8 800 725-32-32</a>
+              <nav class="header__nav nav nav--closed nav--primary">
+                <button class="nav__burger" type="button">
+                  <span class="visually-hidden">Кнопка бургероного меню.</span>
+                  <span class="nav__burger-in">
+                    <span class="nav__burger-decor"></span>
+                    <span class="nav__burger-decor"></span>
+                    <span class="nav__burger-decor"></span>
+                  </span>
+                </button>
+                <ul class="nav__list">
+                  <li>
+                    <a class="nav__link" href="#">Туры</a>
+                  </li>
+                  <li>
+                    <a class="nav__link" href="#">Обучение</a>
+                  </li>
+                  <li>
+                    <a class="nav__link" href="#">О нас</a>
+                  </li>
+                  <li>
+                    <a class="nav__link" href="#">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="nav__link" href="#">Фотографии</a>
+                  </li>
+                  <li>
+                    <a class="nav__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <a class="header__tel tel-link tel-link--primary" href="tel:+88007253232">8 800 725-32-32</a>
             </div>
           </header>
         </div>
@@ -92,6 +94,10 @@
                       data-video="https://www.youtube.com/embed/9TZXsZItgdw?si=6upohtYfU15GXo1J&autoplay=1">
                       <div class="hero-card__poster-wrapper" data-video-poster="0">
                         <picture>
+                          <source type="image/webp" media="(max-width: 1199px)"
+                            srcset="img/hero/poster-tablet.webp, img/hero/poster-tablet@2x.webp 2x">
+                          <source type="image/jpg" media="(max-width: 1199px)"
+                            srcset="img/hero/poster-tablet.jpg, img/hero/poster-tablet@2x.jpg 2x">
                           <source type="image/webp" srcset="img/hero/poster.webp, img/hero/poster@2x.webp 2x">
                           <img src="img/hero/poster.jpg" srcset="img/hero/poster@2x.jpg 2x" width="482" height="317"
                             alt="Обложка видео с горами на фоне.">
@@ -110,6 +116,10 @@
               <div class="hero-card swiper-slide">
                 <div class="hero-card__decor">
                   <picture>
+                    <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/hero/hero-2-tablet.webp, img/hero/hero-2-tablet@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 1199px)"
+                    srcset="img/hero/hero-2-tablet.jpg, img/hero/hero-2-tablet@2x.jpg 2x">
                     <source type="image/webp" srcset="img/hero/hero-2.webp, img/hero/hero-2@2x.webp 2x">
                     <img src="img/hero/hero-2.jpg" srcset="img/hero/hero-2@2x.jpg" width="1440" height="800" alt="">
                   </picture>
@@ -149,6 +159,10 @@
               <div class="hero-card swiper-slide">
                 <div class="hero-card__decor">
                   <picture>
+                    <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="img/hero/hero-3-tablet.webp, img/hero/hero-3-tablet@2x.webp 2x">
+                  <source type="image/jpg" media="(max-width: 1199px)"
+                    srcset="img/hero/hero-3-tablet.jpg, img/hero/hero-3-tablet@2x.jpg 2x">
                     <source type="image/webp" srcset="img/hero/hero-3.webp, img/hero/hero-3@2x.webp 2x">
                     <img src="img/hero/hero-3.jpg" srcset="img/hero/hero-3@2x.jpg" width="1440" height="800" alt="">
                   </picture>
@@ -156,7 +170,7 @@
                 <div class="container container--relative">
                   <div class="hero-card__text-content">
                     <h2>Магические&nbsp;пейзажи Алтайского Края</h2>
-                    <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических
+                    <p>Алтайский трекинг-тур&nbsp;&mdash; это&nbsp;захватывающее приключение с&nbsp;посещением магических
                       и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
                     <a class="hero-card__btn  btn" href="#">Смотреть тур</a>
                     <div class="hero-card__info-wrapper">
@@ -187,6 +201,10 @@
         <section class="tours">
           <div class="tours__decor">
             <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/decor/clouds-big-mobile.webp, img/decor/clouds-big-mobile@2x.webp 2x">
+              <source type="image/jpg" media="(max-width: 767px)"
+                srcset="img/decor/clouds-big-mobile.png, img/decor/clouds-big-mobile@2x.png 2x">
               <source type="image/webp" media="(max-width: 1199px)"
                 srcset="img/decor/clouds-big-tablet.webp, img/decor/clouds-big-tablet@2x.webp 2x">
               <source type="image/jpg" media="(max-width: 1199px)"
@@ -516,8 +534,8 @@
               <span class="title-shadow__back">Обучение</span>
             </div>
             <div class="learning__text">
-              <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки
-                пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.
+              <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки
+                пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.
               </p>
             </div>
             <div class="learning__slider-wrapper">
@@ -543,6 +561,10 @@
                   <div class="instructor-card swiper-slide">
                     <div class="instructor-card__picture-wrapper">
                       <picture>
+                        <source type="image/webp" media="(max-width: 1199px)"
+                        srcset="img/instructors/instructor-3-tablet.webp, img/instructors/instructor-3-tablet@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 1199px)"
+                        srcset="img/instructors/instructor-3-tablet.jpg, img/instructors/instructor-3-tablet@2x.jpg 2x">
                         <source type="image/webp"
                           srcset="img/instructors/instructor-3.webp, img/instructors/instructor-3@2x.webp 2x">
                         <img src="img/instructors/instructor-3.jpg" srcset="img/instructors/instructor-3@2x.jpg"
@@ -567,6 +589,10 @@
                   <div class="instructor-card swiper-slide">
                     <div class="instructor-card__picture-wrapper">
                       <picture>
+                        <source type="image/webp" media="(max-width: 1199px)"
+                          srcset="img/instructors/instructor-1-tablet.webp, img/instructors/instructor-1-tablet@2x.webp 2x">
+                        <source type="image/jpg" media="(max-width: 1199px)"
+                          srcset="img/instructors/instructor-1-tablet.jpg, img/instructors/instructor-1-tablet@2x.jpg 2x">
                         <source type="image/webp"
                           srcset="img/instructors/instructor-1.webp, img/instructors/instructor-1@2x.webp 2x">
                         <img src="img/instructors/instructor-1.jpg" srcset="img/instructors/instructor-1@2x.jpg"
@@ -589,6 +615,10 @@
                   <div class="instructor-card swiper-slide">
                     <div class="instructor-card__picture-wrapper">
                       <picture>
+                        <source type="image/webp" media="(max-width: 1199px)"
+                        srcset="img/instructors/instructor-2-tablet.webp, img/instructors/instructor-2-tablet@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 1199px)"
+                        srcset="img/instructors/instructor-2-tablet.jpg, img/instructors/instructor-2-tablet@2x.jpg 2x">
                         <source type="image/webp"
                           srcset="img/instructors/instructor-2.webp, img/instructors/instructor-2@2x.webp 2x">
                         <img src="img/instructors/instructor-2.jpg" srcset="img/instructors/instructor-2@2x.jpg"
@@ -614,6 +644,10 @@
                   <div class="instructor-card swiper-slide">
                     <div class="instructor-card__picture-wrapper">
                       <picture>
+                        <source type="image/webp" media="(max-width: 1199px)"
+                        srcset="img/instructors/instructor-3-tablet.webp, img/instructors/instructor-3-tablet@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 1199px)"
+                        srcset="img/instructors/instructor-3-tablet.jpg, img/instructors/instructor-3-tablet@2x.jpg 2x">
                         <source type="image/webp"
                           srcset="img/instructors/instructor-3.webp, img/instructors/instructor-3@2x.webp 2x">
                         <img src="img/instructors/instructor-3.jpg" srcset="img/instructors/instructor-3@2x.jpg"
@@ -713,7 +747,7 @@
                           <use href="img/sprite.svg#mountain"></use>
                         </svg>
                       </span>
-                      <p class="process-card__text">Разъяснение сложности горных препятствий</p>
+                      <p class="process-card__text">Разъяснение сложности горных&nbsp;<br>препятствий</p>
                     </div>
                     <span class="process-card__decor process-card__decor--wide"></span>
                   </div>
@@ -723,6 +757,10 @@
           </div>
           <div class="learning__decor">
             <picture>
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="img/decor/clouds-1-tablet.webp, img/decor/clouds-1-tablet@2x.webp 2x">
+              <source type="image/jpg" media="(max-width: 1199px)"
+                srcset="img/decor/clouds-1-tablet.png, img/decor/clouds-1-tablet@2x.png 2x">
               <source type="image/webp" srcset="img/decor/clouds-1.webp, img/decor/clouds-1@2x.webp 2x">
               <img src="img/decor/clouds-1.png" srcset="img/decor/clouds-1@2x.png" width="620" height="280" alt="">
             </picture>
@@ -733,6 +771,10 @@
         <section class="about">
           <div class="about__picture">
             <picture>
+              <source type="image/webp" media="(max-width: 767px)"
+                srcset="img/decor/about-mobile.webp, img/decor/about-mobile@2x.webp 2x">
+              <source type="image/jpg" media="(max-width: 767px)"
+                srcset="img/decor/about-mobile.png, img/decor/about-mobile@2x.png 2x">
               <source type="image/webp" media="(max-width: 1199px)"
                 srcset="img/decor/about-tablet.webp, img/decor/about-tablet@2x.webp 2x">
               <source type="image/jpg" media="(max-width: 1199px)"
@@ -792,6 +834,10 @@
                 <div class="review-card swiper-slide">
                   <div class="review-card__picture-wrapper">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/reviews/review-1-mobile.webp, img/reviews/review-1-mobile@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)"
+                        srcset="img/reviews/review-1-mobile.jpg, img/reviews/review-1-mobile@2x.jpg 2x">
                       <source type="image/webp" srcset="img/reviews/review-1.webp, img/reviews/review-1@2x.webp 2x">
                       <img src="img/reviews/review-1.jpg" srcset="img/reviews/review-1@2x.jpg" width="258" height="243"
                         alt="">
@@ -804,8 +850,8 @@
                         Делились
                         увлекательными историями о&nbsp;местах, людях, культуре места.
                       </p>
-                      <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Ещё
-                        никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
+                      <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после.
+                        Ещё&nbsp;никогда не&nbsp;отдыхал так душой и&nbsp;телом.&nbsp;Всем очень рекомендую!</p>
                     </div>
                     <div class="review-card__title-wrapper">
                       <h3 class="review-card__title">Фролов Александр</h3>
@@ -816,6 +862,10 @@
                 <div class="review-card swiper-slide">
                   <div class="review-card__picture-wrapper">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/reviews/review-2-mobile.webp, img/reviews/review-2-mobile@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)"
+                        srcset="img/reviews/review-2-mobile.jpg, img/reviews/review-2-mobile@2x.jpg 2x">
                       <source type="image/webp" srcset="img/reviews/review-2.webp, img/reviews/review-2@2x.webp 2x">
                       <img src="img/reviews/review-2.jpg" srcset="img/reviews/review-2@2x.jpg" width="258" height="243"
                         alt="">
@@ -839,6 +889,10 @@
                 <div class="review-card swiper-slide">
                   <div class="review-card__picture-wrapper">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/reviews/review-3-mobile.webp, img/reviews/review-3-mobile@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)"
+                        srcset="img/reviews/review-3-mobile.jpg, img/reviews/review-3-mobile@2x.jpg 2x">
                       <source type="image/webp" srcset="img/reviews/review-3.webp, img/reviews/review-3@2x.webp 2x">
                       <img src="img/reviews/review-3.jpg" srcset="img/reviews/review-3@2x.jpg" width="258" height="243"
                         alt="">
@@ -864,6 +918,10 @@
                 <div class="review-card swiper-slide">
                   <div class="review-card__picture-wrapper">
                     <picture>
+                      <source type="image/webp" media="(max-width: 767px)"
+                        srcset="img/reviews/review-4-mobile.webp, img/reviews/review-4-mobile@2x.webp 2x">
+                      <source type="image/jpg" media="(max-width: 767px)"
+                        srcset="img/reviews/review-4-mobile.jpg, img/reviews/review-4-mobile@2x.jpg 2x">
                       <source type="image/webp" srcset="img/reviews/review-4.webp, img/reviews/review-4@2x.webp 2x">
                       <img src="img/reviews/review-4.jpg" srcset="img/reviews/review-4@2x.jpg" width="258" height="243"
                         alt="">
@@ -893,12 +951,20 @@
         <section class="advantages">
           <div class="advantages__decor advantages__decor--left">
             <picture>
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="img/decor/clouds-2-tablet.webp, img/decor/clouds-2-tablet@2x.webp 2x">
+              <source type="image/jpg" media="(max-width: 1199px)"
+                srcset="img/decor/clouds-2-tablet.png, img/decor/clouds-2-tablet@2x.png 2x">
               <source type="image/webp" srcset="img/decor/clouds-2.webp, img/decor/clouds-2@2x.webp 2x">
               <img src="img/decor/clouds-2.png" srcset="img/decor/clouds-2@2x.png" width="875" height="402" alt="">
             </picture>
           </div>
           <div class="advantages__decor advantages__decor--right">
             <picture>
+              <source type="image/webp" media="(max-width: 1199px)"
+                srcset="img/decor/clouds-3-tablet.webp, img/decor/clouds-3-tablet@2x.webp 2x">
+              <source type="image/jpg" media="(max-width: 1199px)"
+                srcset="img/decor/clouds-3-tablet.png, img/decor/clouds-3-tablet@2x.png 2x">
               <source type="image/webp" srcset="img/decor/clouds-3.webp, img/decor/clouds-3@2x.webp 2x">
               <img src="img/decor/clouds-3.png" srcset="img/decor/clouds-3@2x.png" width="462" height="263" alt="">
             </picture>
@@ -933,7 +999,8 @@
                     <h3>Экспертиза и знания</h3>
                     <p>Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях
                       и&nbsp;технике
-                      безопасности. Это гарантирует, что&nbspнаши клиенты находятся в&nbsp;надежных руках и&nbsp;могут
+                      безопасности.<br>Это гарантирует, что&nbspнаши клиенты находятся в&nbsp;надежных руках
+                      и&nbsp;могут
                       в&nbsp;полной мере насладиться опытом без&nbspопасений.</p>
                   </div>
                 </div>
@@ -946,8 +1013,8 @@
                   <div class="advantage-card__text-wrapper">
                     <h3>Оборудование и снаряжение</h3>
                     <p>Мы&nbsp;предоставляем клиентам все&nbsp;необходимое оборудование, необходимое для путешествия.
-                      Это&nbsp;избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что
-                      делает
+                      Это&nbsp;избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение,
+                      что&nbsp;делает
                       путешествие более удобным и&nbsp;экономически выгодным.</p>
                   </div>
                 </div>
@@ -1006,7 +1073,7 @@
             </div>
             <div class="gallery__text-content slider-header">
               <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото.
-                Лучшие фотографии украсят этот раздел нашего сайта.</p>
+                Лучшие&nbsp;фотографии украсят этот раздел нашего&nbsp;сайта.</p>
               <div class="gallery__slider-controls slider-controls">
                 <button class="slider-controls__btn btn" type="button" data-gallery-slider-btn-prev="0">
                   <span class="visually-hidden">Показать предыдущий слайд.</span>
@@ -1023,90 +1090,104 @@
               </div>
             </div>
           </div>
-          <div class="gallery__slider swiper" data-gallery-slider="0">
-            <div class="swiper-wrapper">
-              <div class="gallery-card gallery-card--primary swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="img/gallery/photo-1-tablet.webp, img/gallery/photo-1-tablet@2x.webp 2x">
-                  <source type="image/jpg" media="(max-width: 1199px)"
-                    srcset="img/gallery/photo-1-tablet.jpg, img/gallery/photo-1-tablet@2x.jpg 2x">
-                  <source type="image/webp" srcset="img/gallery/photo-1.webp, img/gallery/photo-1@2x.webp 2x">
-                  <img src="img/gallery/photo-1.jpg" srcset="img/gallery/photo-1@2x.jpg" width="275" height="449"
-                    alt="">
-                </picture>
-              </div>
-              <div class="gallery-card gallery-card--two-rows swiper-slide">
-                <picture>
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="img/gallery/photo-2-tablet.webp, img/gallery/photo-2-tablet@2x.webp 2x">
-                  <source type="image/jpg" media="(max-width: 1199px)"
-                    srcset="img/gallery/photo-2-tablet.jpg, img/gallery/photo-2-tablet@2x.jpg 2x">
-                  <source type="image/webp" srcset="img/gallery/photo-2.webp, img/gallery/photo-2@2x.webp 2x">
-                  <img src="img/gallery/photo-2.jpg" srcset="img/gallery/photo-2@2x.jpg" width="298" height="179"
-                    alt="">
-                </picture>
-                <picture>
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="img/gallery/photo-3-tablet.webp, img/gallery/photo-3-tablet@2x.webp 2x">
-                  <source type="image/jpg" media="(max-width: 1199px)"
-                    srcset="img/gallery/photo-3-tablet.jpg, img/gallery/photo-3-tablet@2x.jpg 2x">
-                  <source type="image/webp" srcset="img/gallery/photo-3.webp, img/gallery/photo-3@2x.webp 2x">
-                  <img src="img/gallery/photo-3.jpg" srcset="img/gallery/photo-3@2x.jpg" width="298" height="265"
-                    alt="">
-                </picture>
-              </div>
-              <div class="gallery-card swiper-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery/photo-4.webp, img/gallery/photo-4@2x.webp 2x">
-                  <img src="img/gallery/photo-4.jpg" srcset="img/gallery/photo-4@2x.jpg" width="275" height="449"
-                    alt="">
-                </picture>
-              </div>
-              <div class="gallery-card gallery-card--two-rows swiper-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery/photo-5.webp, img/gallery/photo-5@2x.webp 2x">
-                  <img src="img/gallery/photo-5.jpg" srcset="img/gallery/photo-5@2x.jpg" width="298" height="179"
-                    alt="">
-                </picture>
-                <picture>
-                  <source type="image/webp" srcset="img/gallery/photo-6.webp, img/gallery/photo-6@2x.webp 2x">
-                  <img src="img/gallery/photo-6.jpg" srcset="img/gallery/photo-6@2x.jpg" width="298" height="265"
-                    alt="">
-                </picture>
-              </div>
-              <div class="gallery-card gallery-card--secondary swiper-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery/photo-7.webp, img/gallery/photo-7@2x.webp 2x">
-                  <img src="img/gallery/photo-7.jpg" srcset="img/gallery/photo-7@2x.jpg" width="275" height="449"
-                    alt="">
-                </picture>
-              </div>
-              <div class="gallery-card swiper-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery/photo-4.webp, img/gallery/photo-4@2x.webp 2x">
-                  <img src="img/gallery/photo-4.jpg" srcset="img/gallery/photo-4@2x.jpg" width="275" height="449"
-                    alt="">
-                </picture>
-              </div>
-              <div class="gallery-card gallery-card--two-rows swiper-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery/photo-5.webp, img/gallery/photo-5@2x.webp 2x">
-                  <img src="img/gallery/photo-5.jpg" srcset="img/gallery/photo-5@2x.jpg" width="298" height="179"
-                    alt="">
-                </picture>
-                <picture>
-                  <source type="image/webp" srcset="img/gallery/photo-6.webp, img/gallery/photo-6@2x.webp 2x">
-                  <img src="img/gallery/photo-6.jpg" srcset="img/gallery/photo-6@2x.jpg" width="298" height="265"
-                    alt="">
-                </picture>
-              </div>
-              <div class="gallery-card swiper-slide">
-                <picture>
-                  <source type="image/webp" srcset="img/gallery/photo-7.webp, img/gallery/photo-7@2x.webp 2x">
-                  <img src="img/gallery/photo-7.jpg" srcset="img/gallery/photo-7@2x.jpg" width="275" height="449"
-                    alt="">
-                </picture>
+          <div class="gallery__slider-container">
+            <div class="gallery__slider swiper" data-gallery-slider="0">
+              <div class="swiper-wrapper">
+                <div class="gallery-card gallery-card--primary swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/gallery/photo-1-mobile.webp, img/gallery/photo-1-mobile@2x.webp 2x">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/gallery/photo-1-mobile.jpg, img/gallery/photo-1-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/gallery/photo-1-tablet.webp, img/gallery/photo-1-tablet@2x.webp 2x">
+                    <source type="image/jpg" media="(max-width: 1199px)"
+                      srcset="img/gallery/photo-1-tablet.jpg, img/gallery/photo-1-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/gallery/photo-1.webp, img/gallery/photo-1@2x.webp 2x">
+                    <img src="img/gallery/photo-1.jpg" srcset="img/gallery/photo-1@2x.jpg" width="275" height="449"
+                      alt="">
+                  </picture>
+                </div>
+                <div class="gallery-card gallery-card--two-rows swiper-slide">
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/gallery/photo-2-mobile.webp, img/gallery/photo-2-mobile@2x.webp 2x">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/gallery/photo-2-mobile.jpg, img/gallery/photo-2-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/gallery/photo-2-tablet.webp, img/gallery/photo-2-tablet@2x.webp 2x">
+                    <source type="image/jpg" media="(max-width: 1199px)"
+                      srcset="img/gallery/photo-2-tablet.jpg, img/gallery/photo-2-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/gallery/photo-2.webp, img/gallery/photo-2@2x.webp 2x">
+                    <img src="img/gallery/photo-2.jpg" srcset="img/gallery/photo-2@2x.jpg" width="298" height="179"
+                      alt="">
+                  </picture>
+                  <picture>
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="img/gallery/photo-3-mobile.webp, img/gallery/photo-3-mobile@2x.webp 2x">
+                    <source type="image/jpg" media="(max-width: 767px)"
+                      srcset="img/gallery/photo-3-mobile.jpg, img/gallery/photo-3-mobile@2x.jpg 2x">
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="img/gallery/photo-3-tablet.webp, img/gallery/photo-3-tablet@2x.webp 2x">
+                    <source type="image/jpg" media="(max-width: 1199px)"
+                      srcset="img/gallery/photo-3-tablet.jpg, img/gallery/photo-3-tablet@2x.jpg 2x">
+                    <source type="image/webp" srcset="img/gallery/photo-3.webp, img/gallery/photo-3@2x.webp 2x">
+                    <img src="img/gallery/photo-3.jpg" srcset="img/gallery/photo-3@2x.jpg" width="298" height="265"
+                      alt="">
+                  </picture>
+                </div>
+                <div class="gallery-card swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/gallery/photo-4.webp, img/gallery/photo-4@2x.webp 2x">
+                    <img src="img/gallery/photo-4.jpg" srcset="img/gallery/photo-4@2x.jpg" width="275" height="449"
+                      alt="">
+                  </picture>
+                </div>
+                <div class="gallery-card gallery-card--two-rows swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/gallery/photo-5.webp, img/gallery/photo-5@2x.webp 2x">
+                    <img src="img/gallery/photo-5.jpg" srcset="img/gallery/photo-5@2x.jpg" width="298" height="179"
+                      alt="">
+                  </picture>
+                  <picture>
+                    <source type="image/webp" srcset="img/gallery/photo-6.webp, img/gallery/photo-6@2x.webp 2x">
+                    <img src="img/gallery/photo-6.jpg" srcset="img/gallery/photo-6@2x.jpg" width="298" height="265"
+                      alt="">
+                  </picture>
+                </div>
+                <div class="gallery-card gallery-card--secondary swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/gallery/photo-7.webp, img/gallery/photo-7@2x.webp 2x">
+                    <img src="img/gallery/photo-7.jpg" srcset="img/gallery/photo-7@2x.jpg" width="275" height="449"
+                      alt="">
+                  </picture>
+                </div>
+                <div class="gallery-card swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/gallery/photo-4.webp, img/gallery/photo-4@2x.webp 2x">
+                    <img src="img/gallery/photo-4.jpg" srcset="img/gallery/photo-4@2x.jpg" width="275" height="449"
+                      alt="">
+                  </picture>
+                </div>
+                <div class="gallery-card gallery-card--two-rows swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/gallery/photo-5.webp, img/gallery/photo-5@2x.webp 2x">
+                    <img src="img/gallery/photo-5.jpg" srcset="img/gallery/photo-5@2x.jpg" width="298" height="179"
+                      alt="">
+                  </picture>
+                  <picture>
+                    <source type="image/webp" srcset="img/gallery/photo-6.webp, img/gallery/photo-6@2x.webp 2x">
+                    <img src="img/gallery/photo-6.jpg" srcset="img/gallery/photo-6@2x.jpg" width="298" height="265"
+                      alt="">
+                  </picture>
+                </div>
+                <div class="gallery-card swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/gallery/photo-7.webp, img/gallery/photo-7@2x.webp 2x">
+                    <img src="img/gallery/photo-7.jpg" srcset="img/gallery/photo-7@2x.jpg" width="275" height="449"
+                      alt="">
+                  </picture>
+                </div>
               </div>
             </div>
           </div>
@@ -1128,7 +1209,7 @@
             <div class="questions-form__inner">
               <div class="questions-form__text-content">
                 <h2>Остались вопросы?</h2>
-                <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+                <p>Заполните форму и наш оператор свяжется с&nbsp;вами для консультации.</p>
               </div>
               <form class="form" action="https://echo.htmlacademy.ru/" method="post">
                 <div class="form__inner">
@@ -1161,7 +1242,8 @@
                   <span class="title-shadow__back">Контакты</span>
                 </div>
                 <div class="contacts__text-content">
-                  <p>Свяжитесь с&nbsp;нами любым удобным для вас cпособом или&nbsp;приходите к&nbsp;нам в&nbsp;гости.
+                  <p>Свяжитесь с&nbsp;нами любым удобным для&nbsp;вас&nbsp;cпособом или&nbsp;приходите
+                    к&nbsp;нам&nbsp;в&nbsp;гости.
                     Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
                 </div>
               </div>
@@ -1202,7 +1284,7 @@
                       </span>
                       <div class="contacts-card__link-wrapper">
                         <p class="contacts-card__title">Адрес</p>
-                        <span>г. Москва, пр-т Мира, д. 14, офис 101</span>
+                        <span>г. Москва, пр-т Мира,<br> д. 14, офис 101</span>
                       </div>
                     </div>
                   </li>
@@ -1211,12 +1293,16 @@
             </div>
             <div class="contacts__map">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)"
+                  srcset="img/map/map-mobile.webp, img/map/map-mobile@2x.webp 2x">
+                <source type="image/jpg" media="(max-width: 767px)"
+                  srcset="img/map/map-mobile.jpg, img/map/map-mobile@2x.jpg 2x">
                 <source type="image/webp" media="(max-width: 1199px)"
-                  srcset="img/map-tablet.webp, img/map-tablet@2x.webp 2x">
+                  srcset="img/map/map-tablet.webp, img/map/map-tablet@2x.webp 2x">
                 <source type="image/jpg" media="(max-width: 1199px)"
-                  srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x">
-                <source type="image/webp" srcset="img/map.webp, img/map@2x.webp 2x">
-                <img src="img/map.jpg" srcset="img/map@2x.jpg" width="1440" height="800" alt="">
+                  srcset="img/map/map-tablet.jpg, img/map/map-tablet@2x.jpg 2x">
+                <source type="image/webp" srcset="img/map/map.webp, img/map/map@2x.webp 2x">
+                <img src="img/map/map.jpg" srcset="img/map/map@2x.jpg" width="1440" height="800" alt="">
               </picture>
             </div>
           </div>
@@ -1229,26 +1315,28 @@
               <span class="footer__logo-link logo-link">
                 <img src="img/svg/logo-2.svg" alt="Логотип сайта" width="200" height="60">
               </span>
-              <ul class="footer__nav nav">
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Туры</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Обучение</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">О нас</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Отзывы</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Фотографии</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Контакты</a>
-                </li>
-              </ul>
+              <nav class="footer__nav nav">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Туры</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Обучение</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">О нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Фотографии</a>
+                  </li>
+                  <li class="nav__item">
+                    <a class="nav__link" href="#">Контакты</a>
+                  </li>
+                </ul>
+              </nav>
               <a class="footer__tel-link tel-link" href="tel:+88007253232">8 800 725-32-32</a>
             </div>
             <ul class="footer__socials">
@@ -1284,37 +1372,6 @@
       </footer>
     </div>
   </div>
-
-
-  <!-- <div class="modal modal--preload" data-modal="feedback">
-              <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-          <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Обычная модалка</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
-        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="15" height="15">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div> -->
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>

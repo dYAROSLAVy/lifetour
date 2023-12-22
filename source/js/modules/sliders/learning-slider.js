@@ -22,6 +22,12 @@ const learningSlider = () => {
         spaceBetween: 20,
         allowTouchMove: true,
       },
+      320: {
+        initialSlide: 3,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        allowTouchMove: true,
+      },
     },
   });
 };

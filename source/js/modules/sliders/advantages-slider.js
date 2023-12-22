@@ -1,31 +1,39 @@
-let desktop = window.matchMedia('(min-width: 1200px)');
-
 const advantagesSlider = () => {
+  let slider;
   const swiperWrapper = document.querySelector('[data-advantages-slider]');
   const buttonPrev = document.querySelector('[data-advantages-slider-btn-prev]');
   const buttonNext = document.querySelector('[data-advantages-slider-btn-next]');
+  const desktop = window.matchMedia('(min-width: 1200px)');
 
-  const slider = new window.Swiper(swiperWrapper, {
-    loop: false,
-    navigation: {
-      nextEl: buttonNext,
-      prevEl: buttonPrev,
-    },
-    breakpoints: {
-      1200: {
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        initialSlide: 1,
-        allowTouchMove: false,
+  const createSlider = () => {
+    slider = new window.Swiper(swiperWrapper, {
+      loop: false,
+      navigation: {
+        nextEl: buttonNext,
+        prevEl: buttonPrev,
       },
-    },
-  });
+      breakpoints: {
+        1200: {
+          slidesPerView: 'auto',
+          spaceBetween: 30,
+          initialSlide: 1,
+          allowTouchMove: false,
+        },
+      },
+    });
+  };
 
-  if (desktop.matches) {
-    return slider;
-  } else {
-    return slider.destroy();
-  }
+  const breakpointChecker = (evt) => {
+    const matches = evt ? evt.matches : desktop.matches;
+    if (matches) {
+      createSlider();
+    } else if (slider) {
+      slider.destroy();
+    }
+  };
+
+  desktop.addEventListener('change', breakpointChecker);
+  breakpointChecker();
 };
 
 export {advantagesSlider};

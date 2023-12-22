@@ -10,18 +10,22 @@
   }
 
   &--pagination {
-    top: -90px;
+    top: -72px;
   }
 
   @include vp-1199 {
     padding: 0 45px;
 
     &--pagination {
-      top: - 34px;
+      top: - 15px;
     }
   }
 
   @include vp-767 {
     padding: 0 15px;
+
+    &--pagination {
+      top: - 14px;
+    }
   }
 }

@@ -24,6 +24,13 @@ const gallerySlider = () => {
         spaceBetween: 5,
         allowTouchMove: true,
       },
+      320: {
+        slidesPerGroup: 2,
+        slidesPerGroupSkip: 2,
+        slidesPerView: 'auto',
+        spaceBetween: 3,
+        allowTouchMove: true,
+      },
     },
   });
 };
