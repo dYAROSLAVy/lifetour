@@ -23,25 +23,19 @@
 }
 
 .questions-form__decor {
-  position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  display: flex;
   width: 100%;
   height: 100%;
-  pointer-events: none;
-  user-select: none;
-}
-
-.questions-form__decor img,
-.questions-form__decor picture {
-  display: flex;
-  width: 100%;
+  background-color: #2a3b38;
 }
 
 .questions-form__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
+  word-break: break-word;
 
   @include vp-767 {
     padding: 0 0 5px;

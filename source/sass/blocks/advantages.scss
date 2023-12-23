@@ -13,12 +13,6 @@
 }
 
 .advantages__decor {
-  position: absolute;
-  z-index: -1;
-  display: flex;
-  pointer-events: none;
-  user-select: none;
-
   &--left {
     top: -125px;
     left: 0;
@@ -51,12 +45,6 @@
   @include vp-767 {
     display: none;
   }
-}
-
-.advantages__decor img,
-.advantages__decor picture {
-  display: flex;
-  width: 100%;
 }
 
 .advantages__title {

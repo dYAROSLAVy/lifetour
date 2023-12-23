@@ -1,8 +1,14 @@
 .tel-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 160px;
+  min-height: 40px;
   padding-top: 3px;
   font-size: 18px;
   font-weight: 600;
   line-height: 18px;
+  word-break: break-word;
 
   @include hover-focus {
     color: $color-resolution-blue;

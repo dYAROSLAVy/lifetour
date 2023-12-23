@@ -2,6 +2,7 @@
   position: relative;
   width: 90%;
   padding-top: 23px;
+  word-break: break-word;
 
   &--primary {
     @include vp-1199 {

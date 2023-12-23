@@ -1,5 +1,6 @@
 .slider-controls {
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
   align-items: end;
 }

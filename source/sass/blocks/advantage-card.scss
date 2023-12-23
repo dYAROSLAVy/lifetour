@@ -8,6 +8,7 @@
   padding: 39px 19px;
   text-align: center;
   background-color: $color-default-white;
+  word-break: break-word;
 
   @include vp-1199 {
     width: auto;

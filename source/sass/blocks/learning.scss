@@ -123,6 +123,7 @@
 
 .learning__process-item {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .learning__process-item:nth-child(4n)>.process-card,
@@ -161,15 +162,10 @@
 }
 
 .learning__decor {
-  position: absolute;
-  z-index: -1;
   right: 0;
   bottom: -170px;
-  display: flex;
   width: 620px;
   height: 280px;
-  pointer-events: none;
-  user-select: none;
 
   @include vp-1199 {
     bottom: 17px;
@@ -179,9 +175,4 @@
   @include vp-767 {
     display: none;
   }
-}
-
-.learning__decor img,
-.learning__decor picture {
-  display: flex;
 }

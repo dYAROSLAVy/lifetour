@@ -8,16 +8,11 @@
 }
 
 .about__picture {
-  position: absolute;
-  z-index: -1;
   left: 0;
-  display: flex;
   width: 50%;
   height: 100%;
   min-width: 808px;
   max-height: 474px;
-  pointer-events: none;
-  user-select: none;
 
   @include vp-1199 {
     top: 60px;
@@ -31,12 +26,6 @@
     min-width: 320px;
     min-height: 400px;
   }
-}
-
-.about__picture picture,
-.about__picture img {
-  display: flex;
-  width: 100%;
 }
 
 .about__title {
@@ -78,6 +67,7 @@
 
 .about__text-wrapper {
   padding: 0 0 79px;
+  word-break: break-word;
 
   @include vp-1199 {
     padding: 0 0 2px;

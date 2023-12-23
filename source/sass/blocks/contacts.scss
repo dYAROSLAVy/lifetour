@@ -19,6 +19,7 @@
 .contacts__info {
   display: grid;
   gap: 49px;
+  word-break: break-word;
 
   @include vp-1199 {
     gap: 40px;
@@ -88,8 +89,9 @@
 }
 
 .contacts__map {
-  display: flex;
   padding: 98px 0 0 115px;
+  width: 700px;
+  height: 422px;
 
   @include vp-1199 {
     position: relative;
@@ -103,10 +105,4 @@
     left: -15px;
     height: 320px;
   }
-}
-
-.contacts__map img,
-.contacts__map picture {
-  display: flex;
-  width: 100%;
 }

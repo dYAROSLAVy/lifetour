@@ -22,7 +22,7 @@
           <header class="header">
             <div class="header__inner">
               <span class="header__logo logo-link">
-                <img src="img/svg/logo.svg" alt="Логотип сайта" width="205" height="62">
+                <img src="img/svg/logo.svg" alt="Логотип сайта." width="205" height="62">
               </span>
               <nav class="header__nav nav nav--closed nav--primary">
                 <button class="nav__burger" type="button">
@@ -35,22 +35,22 @@
                 </button>
                 <ul class="nav__list">
                   <li>
-                    <a class="nav__link" href="#">Туры</a>
+                    <a class="nav__link" href="#tours">Туры</a>
                   </li>
                   <li>
-                    <a class="nav__link" href="#">Обучение</a>
+                    <a class="nav__link" href="#learning">Обучение</a>
                   </li>
                   <li>
-                    <a class="nav__link" href="#">О нас</a>
+                    <a class="nav__link" href="#about">О нас</a>
                   </li>
                   <li>
-                    <a class="nav__link" href="#">Отзывы</a>
+                    <a class="nav__link" href="#reviews">Отзывы</a>
                   </li>
                   <li>
-                    <a class="nav__link" href="#">Фотографии</a>
+                    <a class="nav__link" href="#gallery">Фотографии</a>
                   </li>
                   <li>
-                    <a class="nav__link" href="#">Контакты</a>
+                    <a class="nav__link" href="#contacts">Контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -62,7 +62,7 @@
           <div class="hero__slider swiper" data-hero-slider="0">
             <div class="swiper-wrapper">
               <div class="hero-card swiper-slide">
-                <div class="hero-card__decor">
+                <div class="hero-card__decor picture picture--decor">
                   <picture>
                     <source type="image/webp" media="(max-width: 1199px)"
                       srcset="img/hero/hero-1-tablet.webp, img/hero/hero-1-tablet@2x.webp 2x">
@@ -80,19 +80,25 @@
                     <a class="hero-card__btn  btn" href="#">Смотреть тур</a>
                     <div class="hero-card__info-wrapper">
                       <span class="hero-card__info">
-                        <svg width="12" height="12">
-                          <use href="img/sprite.svg#moon"></use>
-                        </svg>
-                        6 дней/5 ночей</span>
+                        <span class="hero-card__info-icon">
+                          <svg width="12" height="12">
+                            <use href="img/sprite.svg#moon"></use>
+                          </svg>
+                        </span>
+                        <span>6 дней/5 ночей</span>
+                      </span>
                       <span class="hero-card__info">
-                        <svg width="12" height="12">
-                          <use href="img/sprite.svg#level"></use>
-                        </svg>
-                        Высокая сложность</span>
+                        <span class="hero-card__info-icon">
+                          <svg width="12" height="12">
+                            <use href="img/sprite.svg#level"></use>
+                          </svg>
+                        </span>
+                        <span>Высокая сложность</span>
+                      </span>
                     </div>
                     <div class="hero-card__media-wrapper"
                       data-video="https://www.youtube.com/embed/9TZXsZItgdw?si=6upohtYfU15GXo1J&autoplay=1">
-                      <div class="hero-card__poster-wrapper" data-video-poster="0">
+                      <div class="hero-card__poster-wrapper picture" data-video-poster="0">
                         <picture>
                           <source type="image/webp" media="(max-width: 1199px)"
                             srcset="img/hero/poster-tablet.webp, img/hero/poster-tablet@2x.webp 2x">
@@ -114,12 +120,12 @@
                 </div>
               </div>
               <div class="hero-card swiper-slide">
-                <div class="hero-card__decor">
+                <div class="hero-card__decor picture picture--decor">
                   <picture>
                     <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="img/hero/hero-2-tablet.webp, img/hero/hero-2-tablet@2x.webp 2x">
-                  <source type="image/jpg" media="(max-width: 1199px)"
-                    srcset="img/hero/hero-2-tablet.jpg, img/hero/hero-2-tablet@2x.jpg 2x">
+                      srcset="img/hero/hero-2-tablet.webp, img/hero/hero-2-tablet@2x.webp 2x">
+                    <source type="image/jpg" media="(max-width: 1199px)"
+                      srcset="img/hero/hero-2-tablet.jpg, img/hero/hero-2-tablet@2x.jpg 2x">
                     <source type="image/webp" srcset="img/hero/hero-2.webp, img/hero/hero-2@2x.webp 2x">
                     <img src="img/hero/hero-2.jpg" srcset="img/hero/hero-2@2x.jpg" width="1440" height="800" alt="">
                   </picture>
@@ -132,17 +138,23 @@
                     <a class="hero-card__btn  btn" href="#">Смотреть тур</a>
                     <div class="hero-card__info-wrapper">
                       <span class="hero-card__info">
-                        <svg width="12" height="12">
-                          <use href="img/sprite.svg#moon"></use>
-                        </svg>
-                        9 дней/10 ночей</span>
+                        <span class="hero-card__info-icon">
+                          <svg width="12" height="12">
+                            <use href="img/sprite.svg#moon"></use>
+                          </svg>
+                        </span>
+                        <span>9 дней/10 ночей</span>
+                      </span>
                       <span class="hero-card__info">
-                        <svg width="12" height="12">
-                          <use href="img/sprite.svg#level"></use>
-                        </svg>
-                        Средняя сложность</span>
+                        <span class="hero-card__info-icon">
+                          <svg width="12" height="12">
+                            <use href="img/sprite.svg#level"></use>
+                          </svg>
+                        </span>
+                        <span>Средняя сложность</span>
+                      </span>
                     </div>
-                    <div class="hero-card__media-wrapper hero-card__media-wrapper--primary">
+                    <div class="hero-card__media-wrapper hero-card__media-wrapper--primary picture">
                       <picture>
                         <source type="image/webp" media="(max-width: 1199px)"
                           srcset="img/hero/photo-cards-tablet.webp, img/hero/photo-cards-tablet@2x.webp 2x">
@@ -150,19 +162,19 @@
                           srcset="img/hero/photo-cards-tablet.png, img/hero/photo-cards-tablet@2x.png 2x">
                         <source type="image/webp" srcset="img/hero/photo-cards.webp, img/hero/photo-cards@2x.webp 2x">
                         <img src="img/hero/photo-cards.png" srcset="img/hero/photo-cards@2x.jpg" width="410"
-                          height="459" alt="">
+                          height="459" alt="Фотографии природы.">
                       </picture>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="hero-card swiper-slide">
-                <div class="hero-card__decor">
+                <div class="hero-card__decor picture picture--decor">
                   <picture>
                     <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="img/hero/hero-3-tablet.webp, img/hero/hero-3-tablet@2x.webp 2x">
-                  <source type="image/jpg" media="(max-width: 1199px)"
-                    srcset="img/hero/hero-3-tablet.jpg, img/hero/hero-3-tablet@2x.jpg 2x">
+                      srcset="img/hero/hero-3-tablet.webp, img/hero/hero-3-tablet@2x.webp 2x">
+                    <source type="image/jpg" media="(max-width: 1199px)"
+                      srcset="img/hero/hero-3-tablet.jpg, img/hero/hero-3-tablet@2x.jpg 2x">
                     <source type="image/webp" srcset="img/hero/hero-3.webp, img/hero/hero-3@2x.webp 2x">
                     <img src="img/hero/hero-3.jpg" srcset="img/hero/hero-3@2x.jpg" width="1440" height="800" alt="">
                   </picture>
@@ -170,22 +182,37 @@
                 <div class="container container--relative">
                   <div class="hero-card__text-content">
                     <h2>Магические&nbsp;пейзажи Алтайского Края</h2>
-                    <p>Алтайский трекинг-тур&nbsp;&mdash; это&nbsp;захватывающее приключение с&nbsp;посещением магических
+                    <p>Алтайский трекинг-тур&nbsp;&mdash; это&nbsp;захватывающее приключение с&nbsp;посещением
+                      магических
                       и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
                     <a class="hero-card__btn  btn" href="#">Смотреть тур</a>
                     <div class="hero-card__info-wrapper">
                       <span class="hero-card__info">
-                        <svg width="12" height="12">
-                          <use href="img/sprite.svg#moon"></use>
-                        </svg>
-                        8 дней/7 ночей</span>
+                        <span class="hero-card__info-icon">
+                          <svg width="12" height="12">
+                            <use href="img/sprite.svg#moon"></use>
+                          </svg>
+                        </span>
+                        <span>
+                          8 дней/7 ночей
+                        </span>
+                      </span>
                       <span class="hero-card__info">
-                        <svg width="12" height="12">
-                          <use href="img/sprite.svg#level"></use>
-                        </svg>
-                        Лёгкая сложность</span>
+                        <span class="hero-card__info-icon">
+                          <svg width="12" height="12">
+                            <use href="img/sprite.svg#level"></use>
+                          </svg>
+                        </span>
+                        <span>
+                          Лёгкая сложность
+                        </span>
+                      </span>
                     </div>
-                    <div class="hero-card__media-wrapper">
+                    <div class="hero-card__media-wrapper hero-card__media-wrapper--audio picture">
+                      <iframe width="340" height="220"
+                        src="https://music.yandex.ru/iframe/track/112912322/25474374">Слушайте <a
+                          href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
+                          фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
                     </div>
                   </div>
                 </div>
@@ -198,8 +225,8 @@
         </section>
       </div>
       <div data-test="tours">
-        <section class="tours">
-          <div class="tours__decor">
+        <section class="tours" id="tours">
+          <div class="tours__decor picture picture--decor">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="img/decor/clouds-big-mobile.webp, img/decor/clouds-big-mobile@2x.webp 2x">
@@ -239,11 +266,11 @@
             <div class="tours__slider swiper" data-tours-slider="0">
               <div class="swiper-wrapper">
                 <div class="tours-card swiper-slide">
-                  <div class="tours-card__picture">
+                  <div class="tours-card__picture picture picture--decor">
                     <picture>
                       <source type="image/webp" srcset="img/tours/tours-2.webp, img/tours/tours-2@2x.webp 2x">
                       <img src="img/tours/tours-2.jpg" srcset="img/tours/tours-2@2x.jpg" width="380" height="416"
-                        alt="">
+                        alt="Гора Белуха.">
                     </picture>
                   </div>
                   <div class="tours-card__top-inner">
@@ -308,11 +335,11 @@
                   </div>
                 </div>
                 <div class="tours-card swiper-slide">
-                  <div class="tours-card__picture">
+                  <div class="tours-card__picture picture picture--decor">
                     <picture>
                       <source type="image/webp" srcset="img/tours/tours-1.webp, img/tours/tours-1@2x.webp 2x">
                       <img src="img/tours/tours-1.jpg" srcset="img/tours/tours-1@2x.jpg" width="380" height="416"
-                        alt="">
+                        alt="Гора Эльбрус.">
                     </picture>
                   </div>
                   <div class="tours-card__top-inner">
@@ -378,11 +405,11 @@
                   </div>
                 </div>
                 <div class="tours-card swiper-slide">
-                  <div class="tours-card__picture">
+                  <div class="tours-card__picture picture picture--decor">
                     <picture>
                       <source type="image/webp" srcset="img/tours/tours-2.webp, img/tours/tours-2@2x.webp 2x">
                       <img src="img/tours/tours-2.jpg" srcset="img/tours/tours-2@2x.jpg" width="380" height="416"
-                        alt="">
+                        alt="Гора Белуха.">
                     </picture>
                   </div>
                   <div class="tours-card__top-inner">
@@ -447,11 +474,11 @@
                   </div>
                 </div>
                 <div class="tours-card swiper-slide">
-                  <div class="tours-card__picture">
+                  <div class="tours-card__picture picture picture--decor">
                     <picture>
                       <source type="image/webp" srcset="img/tours/tours-3.webp, img/tours/tours-3@2x.webp 2x">
                       <img src="img/tours/tours-3.jpg" srcset="img/tours/tours-3@2x.jpg" width="380" height="416"
-                        alt="">
+                        alt="Гора Фишт.">
                     </picture>
                   </div>
                   <div class="tours-card__top-inner">
@@ -527,7 +554,7 @@
         </section>
       </div>
       <div data-test="training">
-        <section class="learning">
+        <section class="learning" id="learning">
           <div class="container">
             <div class="learning__title title-shadow title-shadow--primary">
               <h2 class="title-shadow__front">Обучение</h2>
@@ -559,16 +586,16 @@
               <div class="swiper" data-learning-slider="0">
                 <div class="swiper-wrapper">
                   <div class="instructor-card swiper-slide">
-                    <div class="instructor-card__picture-wrapper">
+                    <div class="instructor-card__picture-wrapper picture">
                       <picture>
                         <source type="image/webp" media="(max-width: 1199px)"
-                        srcset="img/instructors/instructor-3-tablet.webp, img/instructors/instructor-3-tablet@2x.webp 2x">
-                      <source type="image/jpg" media="(max-width: 1199px)"
-                        srcset="img/instructors/instructor-3-tablet.jpg, img/instructors/instructor-3-tablet@2x.jpg 2x">
+                          srcset="img/instructors/instructor-3-tablet.webp, img/instructors/instructor-3-tablet@2x.webp 2x">
+                        <source type="image/jpg" media="(max-width: 1199px)"
+                          srcset="img/instructors/instructor-3-tablet.jpg, img/instructors/instructor-3-tablet@2x.jpg 2x">
                         <source type="image/webp"
                           srcset="img/instructors/instructor-3.webp, img/instructors/instructor-3@2x.webp 2x">
                         <img src="img/instructors/instructor-3.jpg" srcset="img/instructors/instructor-3@2x.jpg"
-                          width="255" height="200" alt="">
+                          width="255" height="200" alt="Инструктор-женщина на фоне гор.">
                       </picture>
                     </div>
                     <div class="instructor-card__top-inner">
@@ -587,7 +614,7 @@
                     </p>
                   </div>
                   <div class="instructor-card swiper-slide">
-                    <div class="instructor-card__picture-wrapper">
+                    <div class="instructor-card__picture-wrapper picture">
                       <picture>
                         <source type="image/webp" media="(max-width: 1199px)"
                           srcset="img/instructors/instructor-1-tablet.webp, img/instructors/instructor-1-tablet@2x.webp 2x">
@@ -596,7 +623,7 @@
                         <source type="image/webp"
                           srcset="img/instructors/instructor-1.webp, img/instructors/instructor-1@2x.webp 2x">
                         <img src="img/instructors/instructor-1.jpg" srcset="img/instructors/instructor-1@2x.jpg"
-                          width="255" height="200" alt="">
+                          width="255" height="200" alt="Инструктор-мужчина на фоне заснеженных гор.">
                       </picture>
                     </div>
                     <div class="instructor-card__top-inner">
@@ -613,16 +640,16 @@
                     </p>
                   </div>
                   <div class="instructor-card swiper-slide">
-                    <div class="instructor-card__picture-wrapper">
+                    <div class="instructor-card__picture-wrapper picture">
                       <picture>
                         <source type="image/webp" media="(max-width: 1199px)"
-                        srcset="img/instructors/instructor-2-tablet.webp, img/instructors/instructor-2-tablet@2x.webp 2x">
-                      <source type="image/jpg" media="(max-width: 1199px)"
-                        srcset="img/instructors/instructor-2-tablet.jpg, img/instructors/instructor-2-tablet@2x.jpg 2x">
+                          srcset="img/instructors/instructor-2-tablet.webp, img/instructors/instructor-2-tablet@2x.webp 2x">
+                        <source type="image/jpg" media="(max-width: 1199px)"
+                          srcset="img/instructors/instructor-2-tablet.jpg, img/instructors/instructor-2-tablet@2x.jpg 2x">
                         <source type="image/webp"
                           srcset="img/instructors/instructor-2.webp, img/instructors/instructor-2@2x.webp 2x">
                         <img src="img/instructors/instructor-2.jpg" srcset="img/instructors/instructor-2@2x.jpg"
-                          width="255" height="200" alt="">
+                          width="255" height="200" alt="Инструктор-женщина на фоне гор.">
                       </picture>
                     </div>
                     <div class="instructor-card__top-inner">
@@ -642,16 +669,16 @@
                     </p>
                   </div>
                   <div class="instructor-card swiper-slide">
-                    <div class="instructor-card__picture-wrapper">
+                    <div class="instructor-card__picture-wrapper picture">
                       <picture>
                         <source type="image/webp" media="(max-width: 1199px)"
-                        srcset="img/instructors/instructor-3-tablet.webp, img/instructors/instructor-3-tablet@2x.webp 2x">
-                      <source type="image/jpg" media="(max-width: 1199px)"
-                        srcset="img/instructors/instructor-3-tablet.jpg, img/instructors/instructor-3-tablet@2x.jpg 2x">
+                          srcset="img/instructors/instructor-3-tablet.webp, img/instructors/instructor-3-tablet@2x.webp 2x">
+                        <source type="image/jpg" media="(max-width: 1199px)"
+                          srcset="img/instructors/instructor-3-tablet.jpg, img/instructors/instructor-3-tablet@2x.jpg 2x">
                         <source type="image/webp"
                           srcset="img/instructors/instructor-3.webp, img/instructors/instructor-3@2x.webp 2x">
                         <img src="img/instructors/instructor-3.jpg" srcset="img/instructors/instructor-3@2x.jpg"
-                          width="255" height="200" alt="">
+                          width="255" height="200" alt="Инструктор-женщина на фоне гор.">
                       </picture>
                     </div>
                     <div class="instructor-card__top-inner">
@@ -670,12 +697,12 @@
                     </p>
                   </div>
                   <div class="instructor-card swiper-slide">
-                    <div class="instructor-card__picture-wrapper">
+                    <div class="instructor-card__picture-wrapper picture">
                       <picture>
                         <source type="image/webp"
                           srcset="img/instructors/instructor-4.webp, img/instructors/instructor-4@2x.webp 2x">
                         <img src="img/instructors/instructor-4.jpg" srcset="img/instructors/instructor-4@2x.jpg"
-                          width="255" height="200" alt="">
+                          width="255" height="200" alt="Инструктор-мужчина на фоне гор.">
                       </picture>
                     </div>
                     <div class="instructor-card__top-inner">
@@ -755,7 +782,7 @@
               </ul>
             </div>
           </div>
-          <div class="learning__decor">
+          <div class="learning__decor picture picture--decor">
             <picture>
               <source type="image/webp" media="(max-width: 1199px)"
                 srcset="img/decor/clouds-1-tablet.webp, img/decor/clouds-1-tablet@2x.webp 2x">
@@ -768,8 +795,8 @@
         </section>
       </div>
       <div data-test="about">
-        <section class="about">
-          <div class="about__picture">
+        <section class="about" id="about">
+          <div class="about__picture picture picture--decor">
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="img/decor/about-mobile.webp, img/decor/about-mobile@2x.webp 2x">
@@ -807,7 +834,7 @@
         </section>
       </div>
       <div data-test="reviews">
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="container">
             <div class="reviews__slider-header slider-header">
               <div class="title-shadow title-shadow--primary">
@@ -832,7 +859,7 @@
             <div class="reviews__slider swiper" data-reviews-slider="0">
               <div class="swiper-wrapper">
                 <div class="review-card swiper-slide">
-                  <div class="review-card__picture-wrapper">
+                  <div class="review-card__picture-wrapper picture">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/reviews/review-1-mobile.webp, img/reviews/review-1-mobile@2x.webp 2x">
@@ -840,7 +867,7 @@
                         srcset="img/reviews/review-1-mobile.jpg, img/reviews/review-1-mobile@2x.jpg 2x">
                       <source type="image/webp" srcset="img/reviews/review-1.webp, img/reviews/review-1@2x.webp 2x">
                       <img src="img/reviews/review-1.jpg" srcset="img/reviews/review-1@2x.jpg" width="258" height="243"
-                        alt="">
+                        alt="Мужчина на фоне Алтая.">
                     </picture>
                   </div>
                   <div class="review-card__right-column">
@@ -860,7 +887,7 @@
                   </div>
                 </div>
                 <div class="review-card swiper-slide">
-                  <div class="review-card__picture-wrapper">
+                  <div class="review-card__picture-wrapper picture">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/reviews/review-2-mobile.webp, img/reviews/review-2-mobile@2x.webp 2x">
@@ -868,7 +895,7 @@
                         srcset="img/reviews/review-2-mobile.jpg, img/reviews/review-2-mobile@2x.jpg 2x">
                       <source type="image/webp" srcset="img/reviews/review-2.webp, img/reviews/review-2@2x.webp 2x">
                       <img src="img/reviews/review-2.jpg" srcset="img/reviews/review-2@2x.jpg" width="258" height="243"
-                        alt="">
+                        alt="Мужчина на вершине горы.">
                     </picture>
                   </div>
                   <div class="review-card__right-column">
@@ -887,7 +914,7 @@
                   </div>
                 </div>
                 <div class="review-card swiper-slide">
-                  <div class="review-card__picture-wrapper">
+                  <div class="review-card__picture-wrapper picture">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/reviews/review-3-mobile.webp, img/reviews/review-3-mobile@2x.webp 2x">
@@ -895,7 +922,7 @@
                         srcset="img/reviews/review-3-mobile.jpg, img/reviews/review-3-mobile@2x.jpg 2x">
                       <source type="image/webp" srcset="img/reviews/review-3.webp, img/reviews/review-3@2x.webp 2x">
                       <img src="img/reviews/review-3.jpg" srcset="img/reviews/review-3@2x.jpg" width="258" height="243"
-                        alt="">
+                        alt="Женщина у подножья горы.">
                     </picture>
                   </div>
                   <div class="review-card__right-column">
@@ -916,7 +943,7 @@
                   </div>
                 </div>
                 <div class="review-card swiper-slide">
-                  <div class="review-card__picture-wrapper">
+                  <div class="review-card__picture-wrapper picture">
                     <picture>
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/reviews/review-4-mobile.webp, img/reviews/review-4-mobile@2x.webp 2x">
@@ -924,7 +951,7 @@
                         srcset="img/reviews/review-4-mobile.jpg, img/reviews/review-4-mobile@2x.jpg 2x">
                       <source type="image/webp" srcset="img/reviews/review-4.webp, img/reviews/review-4@2x.webp 2x">
                       <img src="img/reviews/review-4.jpg" srcset="img/reviews/review-4@2x.jpg" width="258" height="243"
-                        alt="">
+                        alt="Женщина на скалистой вершине.">
                     </picture>
                   </div>
                   <div class="review-card__right-column">
@@ -949,7 +976,7 @@
       </div>
       <div data-test="adv">
         <section class="advantages">
-          <div class="advantages__decor advantages__decor--left">
+          <div class="advantages__decor advantages__decor--left picture picture--decor">
             <picture>
               <source type="image/webp" media="(max-width: 1199px)"
                 srcset="img/decor/clouds-2-tablet.webp, img/decor/clouds-2-tablet@2x.webp 2x">
@@ -959,7 +986,7 @@
               <img src="img/decor/clouds-2.png" srcset="img/decor/clouds-2@2x.png" width="875" height="402" alt="">
             </picture>
           </div>
-          <div class="advantages__decor advantages__decor--right">
+          <div class="advantages__decor advantages__decor--right picture picture--decor">
             <picture>
               <source type="image/webp" media="(max-width: 1199px)"
                 srcset="img/decor/clouds-3-tablet.webp, img/decor/clouds-3-tablet@2x.webp 2x">
@@ -999,9 +1026,9 @@
                     <h3>Экспертиза и знания</h3>
                     <p>Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях
                       и&nbsp;технике
-                      безопасности.<br>Это гарантирует, что&nbspнаши клиенты находятся в&nbsp;надежных руках
+                      безопасности.<br>Это гарантирует, что&nbsp;наши клиенты находятся в&nbsp;надежных руках
                       и&nbsp;могут
-                      в&nbsp;полной мере насладиться опытом без&nbspопасений.</p>
+                      в&nbsp;полной мере насладиться опытом без&nbsp;опасений.</p>
                   </div>
                 </div>
                 <div class="advantages__item advantage-card swiper-slide">
@@ -1065,7 +1092,7 @@
         </section>
       </div>
       <div data-test="gallery">
-        <section class="gallery">
+        <section class="gallery" id="gallery">
           <div class="container">
             <div class="gallery__title title-shadow title-shadow--primary">
               <h2 class="title-shadow__front">Фотогалерея</h2>
@@ -1105,7 +1132,7 @@
                       srcset="img/gallery/photo-1-tablet.jpg, img/gallery/photo-1-tablet@2x.jpg 2x">
                     <source type="image/webp" srcset="img/gallery/photo-1.webp, img/gallery/photo-1@2x.webp 2x">
                     <img src="img/gallery/photo-1.jpg" srcset="img/gallery/photo-1@2x.jpg" width="275" height="449"
-                      alt="">
+                      alt="Мужчины на вершине летних гор.">
                   </picture>
                 </div>
                 <div class="gallery-card gallery-card--two-rows swiper-slide">
@@ -1120,7 +1147,7 @@
                       srcset="img/gallery/photo-2-tablet.jpg, img/gallery/photo-2-tablet@2x.jpg 2x">
                     <source type="image/webp" srcset="img/gallery/photo-2.webp, img/gallery/photo-2@2x.webp 2x">
                     <img src="img/gallery/photo-2.jpg" srcset="img/gallery/photo-2@2x.jpg" width="298" height="179"
-                      alt="">
+                      alt="Компания у костра.">
                   </picture>
                   <picture>
                     <source type="image/webp" media="(max-width: 767px)"
@@ -1133,59 +1160,59 @@
                       srcset="img/gallery/photo-3-tablet.jpg, img/gallery/photo-3-tablet@2x.jpg 2x">
                     <source type="image/webp" srcset="img/gallery/photo-3.webp, img/gallery/photo-3@2x.webp 2x">
                     <img src="img/gallery/photo-3.jpg" srcset="img/gallery/photo-3@2x.jpg" width="298" height="265"
-                      alt="">
+                      alt="Компас на фоне облачных вершин.">
                   </picture>
                 </div>
                 <div class="gallery-card swiper-slide">
                   <picture>
                     <source type="image/webp" srcset="img/gallery/photo-4.webp, img/gallery/photo-4@2x.webp 2x">
                     <img src="img/gallery/photo-4.jpg" srcset="img/gallery/photo-4@2x.jpg" width="275" height="449"
-                      alt="">
+                      alt="Совместный спуск с горы на фоне вершины.">
                   </picture>
                 </div>
                 <div class="gallery-card gallery-card--two-rows swiper-slide">
                   <picture>
                     <source type="image/webp" srcset="img/gallery/photo-5.webp, img/gallery/photo-5@2x.webp 2x">
                     <img src="img/gallery/photo-5.jpg" srcset="img/gallery/photo-5@2x.jpg" width="298" height="179"
-                      alt="">
+                      alt="Поход в горах, рядом с водой.">
                   </picture>
                   <picture>
                     <source type="image/webp" srcset="img/gallery/photo-6.webp, img/gallery/photo-6@2x.webp 2x">
                     <img src="img/gallery/photo-6.jpg" srcset="img/gallery/photo-6@2x.jpg" width="298" height="265"
-                      alt="">
+                      alt="Палатка на фоне звездного неба.">
                   </picture>
                 </div>
                 <div class="gallery-card gallery-card--secondary swiper-slide">
                   <picture>
                     <source type="image/webp" srcset="img/gallery/photo-7.webp, img/gallery/photo-7@2x.webp 2x">
                     <img src="img/gallery/photo-7.jpg" srcset="img/gallery/photo-7@2x.jpg" width="275" height="449"
-                      alt="">
+                      alt="Двое мужчин на привале у реки.">
                   </picture>
                 </div>
                 <div class="gallery-card swiper-slide">
                   <picture>
                     <source type="image/webp" srcset="img/gallery/photo-4.webp, img/gallery/photo-4@2x.webp 2x">
                     <img src="img/gallery/photo-4.jpg" srcset="img/gallery/photo-4@2x.jpg" width="275" height="449"
-                      alt="">
+                      alt="Совместный спуск с горы на фоне вершины.">
                   </picture>
                 </div>
                 <div class="gallery-card gallery-card--two-rows swiper-slide">
                   <picture>
                     <source type="image/webp" srcset="img/gallery/photo-5.webp, img/gallery/photo-5@2x.webp 2x">
                     <img src="img/gallery/photo-5.jpg" srcset="img/gallery/photo-5@2x.jpg" width="298" height="179"
-                      alt="">
+                      alt="Поход в горах, рядом с водой.">
                   </picture>
                   <picture>
                     <source type="image/webp" srcset="img/gallery/photo-6.webp, img/gallery/photo-6@2x.webp 2x">
                     <img src="img/gallery/photo-6.jpg" srcset="img/gallery/photo-6@2x.jpg" width="298" height="265"
-                      alt="">
+                      alt="Палатка на фоне звездного неба.">
                   </picture>
                 </div>
                 <div class="gallery-card swiper-slide">
                   <picture>
                     <source type="image/webp" srcset="img/gallery/photo-7.webp, img/gallery/photo-7@2x.webp 2x">
                     <img src="img/gallery/photo-7.jpg" srcset="img/gallery/photo-7@2x.jpg" width="275" height="449"
-                      alt="">
+                      alt="Двое мужчин на привале у реки.">
                   </picture>
                 </div>
               </div>
@@ -1196,7 +1223,7 @@
       <div data-test="form">
         <section class="questions-form">
           <div class="container">
-            <div class="questions-form__decor">
+            <div class="questions-form__decor picture picture--decor">
               <picture>
                 <source type="image/webp" media="(max-width: 1199px)"
                   srcset="img/decor/form-tablet.webp, img/decor/form-tablet@2x.webp 2x">
@@ -1211,32 +1238,38 @@
                 <h2>Остались вопросы?</h2>
                 <p>Заполните форму и наш оператор свяжется с&nbsp;вами для консультации.</p>
               </div>
-              <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-                <div class="form__inner">
-                  <div class="form__input">
-                    <label class="visually-hidden" for="tel">Номер телефона.</label>
-                    <input type="tel" required placeholder="Телефон" name="tel" id="tel">
+              <div data-form-validate="data-form-validate" data-callback="base">
+                <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+                  <div class="form__inner">
+                    <div class="form__input" data-validate-type="phone" data-required="data-required"
+                      data-message-base="Поле обязательно к заполнению"
+                      data-message-extra="Проверьте корректность заполнения поля">
+                      <label class="visually-hidden" for="tel">Номер телефона.</label>
+                      <input type="tel" required placeholder="Телефон" name="tel" id="tel">
+                    </div>
+                    <div class="form__input" data-validate-type="email" data-required="data-required"
+                      data-message-base="Поле обязательно к заполнению"
+                      data-message-extra="Проверьте корректность заполнения поля">
+                      <label class="visually-hidden" for="email">Адрес электронной почты.</label>
+                      <input type="email" required placeholder="Email" name="email" id="email">
+                    </div>
+                    <button class="btn" type="submit">
+                      Отправить
+                    </button>
                   </div>
-                  <div class="form__input">
-                    <label class="visually-hidden" for="email">Адрес электронной почты.</label>
-                    <input type="email" required placeholder="Email" name="email" id="email">
-                  </div>
-                  <button class="btn" type="submit">
-                    Отправить
-                  </button>
-                </div>
-              </form>
+                </form>
+              </div>
             </div>
           </div>
         </section>
       </div>
     </main>
     <div data-test="footer">
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="contacts__inner">
             <div class="contacts__info">
-              <div class="contacts__top-wrapper">
+              <div>
                 <div class="contacts__title title-shadow title-shadow--primary">
                   <h2 class="title-shadow__front">Контакты</h2>
                   <span class="title-shadow__back">Контакты</span>
@@ -1291,7 +1324,7 @@
                 </ul>
               </address>
             </div>
-            <div class="contacts__map">
+            <div class="contacts__map picture">
               <picture>
                 <source type="image/webp" media="(max-width: 767px)"
                   srcset="img/map/map-mobile.webp, img/map/map-mobile@2x.webp 2x">
@@ -1302,7 +1335,7 @@
                 <source type="image/jpg" media="(max-width: 1199px)"
                   srcset="img/map/map-tablet.jpg, img/map/map-tablet@2x.jpg 2x">
                 <source type="image/webp" srcset="img/map/map.webp, img/map/map@2x.webp 2x">
-                <img src="img/map/map.jpg" srcset="img/map/map@2x.jpg" width="1440" height="800" alt="">
+                <img src="img/map/map.jpg" srcset="img/map/map@2x.jpg" width="1440" height="800" alt="Карта с местонахождением компании.">
               </picture>
             </div>
           </div>
@@ -1313,27 +1346,27 @@
           <div class="footer__grid">
             <div class="footer__top-wrapper">
               <span class="footer__logo-link logo-link">
-                <img src="img/svg/logo-2.svg" alt="Логотип сайта" width="200" height="60">
+                <img src="img/svg/logo-2.svg" alt="Логотип сайта." width="200" height="60">
               </span>
               <nav class="footer__nav nav">
                 <ul class="nav__list">
                   <li class="nav__item">
-                    <a class="nav__link" href="#">Туры</a>
+                    <a class="nav__link" href="#tours">Туры</a>
                   </li>
                   <li class="nav__item">
-                    <a class="nav__link" href="#">Обучение</a>
+                    <a class="nav__link" href="#learning">Обучение</a>
                   </li>
                   <li class="nav__item">
-                    <a class="nav__link" href="#">О нас</a>
+                    <a class="nav__link" href="#about">О нас</a>
                   </li>
                   <li class="nav__item">
-                    <a class="nav__link" href="#">Отзывы</a>
+                    <a class="nav__link" href="#reviews">Отзывы</a>
                   </li>
                   <li class="nav__item">
-                    <a class="nav__link" href="#">Фотографии</a>
+                    <a class="nav__link" href="#gallery">Фотографии</a>
                   </li>
                   <li class="nav__item">
-                    <a class="nav__link" href="#">Контакты</a>
+                    <a class="nav__link" href="#contacts">Контакты</a>
                   </li>
                 </ul>
               </nav>

@@ -123,6 +123,7 @@
 .nav__link {
   padding: 2px 4px;
   border: 1px solid transparent;
+  word-break: break-word;
 
   @include hover {
     border-bottom-color: $color-elephant;

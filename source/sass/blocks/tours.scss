@@ -12,15 +12,10 @@
 }
 
 .tours__decor {
-  position: absolute;
-  z-index: -1;
   top: 0;
   right: 0;
-  display: flex;
   width: 602px;
   height: 1630px;
-  pointer-events: none;
-  user-select: none;
 
   @include vp-1199 {
     height: 1364px;
@@ -31,12 +26,6 @@
     width: 171px;
     height: 595px;
   }
-}
-
-.tours__decor img,
-.tours__decor picture {
-  display: flex;
-  width: 100%;
 }
 
 .tours__slider-header {
@@ -65,15 +54,17 @@
 
 .tours__link {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: max-content;
+  width: auto;
   margin: 0 auto;
   padding: 10px;
   font-weight: 700;
   line-height: 16px;
   letter-spacing: 0.64px;
+  word-break: break-word;
 
   @include hover-focus {
     color: $color-resolution-blue;

@@ -14,6 +14,7 @@
 .footer__grid {
   display: grid;
   gap: 22px;
+  word-break: break-word;
 
   @include vp-1199 {
     gap: 34px;
@@ -26,6 +27,7 @@
 
 .footer__top-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 
   @include vp-1199 {
@@ -61,6 +63,7 @@
 
   @include vp-767 {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center
   }
@@ -89,13 +92,12 @@
 
 
 .footer__nav .nav__item {
-
   @include vp-767 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     min-width: 120px;
   }
-
 }
 
 .footer__tel-link {
@@ -106,6 +108,7 @@
 
 .footer__socials {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
   margin: 0 auto;
   padding: 0;
