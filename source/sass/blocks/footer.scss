@@ -1,8 +1,10 @@
 .footer {
+  min-height: 210px;
   padding: 31px 0 32px;
   border-top: 1px solid rgba($color-elephant, 0.2);
 
   @include vp-1199 {
+    min-height: 206px;
     padding: 33px 0 20px;
   }
 

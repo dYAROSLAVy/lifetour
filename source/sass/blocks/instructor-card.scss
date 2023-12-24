@@ -39,6 +39,10 @@
   margin: 0;
   font-size: 14px;
   line-height: 16px;
+
+  @include vp-1199 {
+    width: 70%;
+  }
 }
 
 .instructor-card p {

@@ -4,6 +4,7 @@ const heroSlider = () => {
 
   return new window.Swiper(swiperWrapper, {
     loop: true,
+    autoHeight: true,
     pagination: {
       el: pagination,
       clickable: true,

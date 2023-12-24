@@ -5,6 +5,7 @@ const toursSlider = () => {
 
   return new window.Swiper(swiperWrapper, {
     loop: false,
+    autoHeight: true,
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,
