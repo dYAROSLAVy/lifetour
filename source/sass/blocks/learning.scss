@@ -88,6 +88,7 @@
 }
 
 .learning__process-title {
+  word-break: break-word;
   &:not(:last-child) {
     margin-bottom: 23px;
 
