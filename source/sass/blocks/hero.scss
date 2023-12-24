@@ -2,46 +2,89 @@
   overflow: hidden;
 }
 
-.hero__slider {
-  overflow: visible;
-}
-
 .hero__slider .swiper-pagination {
+  display: flex;
   width: auto;
   left: auto;
   right: 10px;
   bottom: 0;
 
   @include vp-1199 {
+    right: auto;
     left: 50%;
     transform: translateX(-50%);
   }
 }
 
 .hero__slider .swiper-pagination .swiper-pagination-bullet {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 10px;
-  height: 10px;
+  height: 60px;
   margin: 0 10px;
-  background-color: transparent;
-  border: 1px solid $color-default-white;
+  padding: 10px 0;
+  background: transparent;
+
   opacity: 1;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 1px solid $color-default-white;
+    border-radius: 50%;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 50%;
+  }
+
+  @include vp-767 {
+    width: 8px;
+
+    &::after {
+      width: 8px;
+      height: 8px;
+    }
+  }
 }
 
 .hero__slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: $color-default-white;
+  background-color: transparent;
+
+  &::after {
+    background-color: $color-default-white;
+  }
 }
 
 .hero__slider .swiper-pagination-bullet {
   @include hover {
-    background-color: $color-nobel;
+    &::after {
+      background-color: $color-nobel;
+    }
   }
 
   @include focus {
-    outline: 1px solid rgba($color-default-white, 0.5);
-    outline-offset: 1px;
+    outline: none;
+
+    &::before {
+      border-color: rgba($color-default-white, 0.5);
+    }
   }
 
   @include active {
-    background-color: rgba($color-default-white, 0.5);
+    &::after {
+      background-color:rgba($color-default-white, 0.5);
+    }
   }
 }

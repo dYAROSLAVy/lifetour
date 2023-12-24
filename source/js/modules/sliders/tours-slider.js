@@ -5,6 +5,7 @@ const toursSlider = () => {
 
   return new window.Swiper(swiperWrapper, {
     loop: false,
+    autoHeight: true,
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,
@@ -21,9 +22,9 @@ const toursSlider = () => {
         slidesPerView: 'auto',
         spaceBetween: 18,
       },
-      0: {
+      320: {
         initialSlide: 1,
-        slidesPerView: 1,
+        slidesPerView: 'auto',
         allowTouchMove: true,
       },
     },

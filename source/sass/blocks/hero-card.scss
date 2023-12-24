@@ -7,33 +7,34 @@
   @include vp-1199 {
     min-height: 1024px;
     padding: 212px 0 187px;
+
+    &--primary {
+      padding: 212px 0 120px;
+    }
+  }
+
+  @include vp-767 {
+    min-height: 568px;
+    padding: 140px 0 40px;
   }
 }
 
 .hero-card__decor {
-  display: flex;
-  position: absolute;
-  z-index: -1;
-  pointer-events: none;
   top: 0;
   width: 100%;
   height: 100%;
-  min-height: 800px;
-}
-
-.hero-card picture,
-.hero-card img {
-  display: flex;
-  width: 100%;
+  background-color: #6d8fb6;
 }
 
 .hero-card__text-content {
   display: flex;
   flex-direction: column;
   min-height: 520px;
+  word-break: break-word;
 
   @include vp-1199 {
     align-items: center;
+    min-height: auto;
     text-align: center;
   }
 }
@@ -48,16 +49,21 @@
     margin-bottom: 23px;
   }
 
-  &:first-child {
-    z-index: 1;
-  }
-
   @include vp-1199 {
     font-size: 56px;
     line-height: 56px;
 
     &:not(:last-child) {
       margin-bottom: 13px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 26px;
+    line-height: 26px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
     }
   }
 }
@@ -78,10 +84,21 @@
       margin-bottom: 27px;
     }
   }
+
+  @include vp-767 {
+    max-width: none;
+    font-size: 15px;
+    line-height: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
 }
 
 .hero-card__btn {
   align-self: start;
+  max-width: 600px;
 
   @include vp-1199 {
     align-self: center;
@@ -94,6 +111,7 @@
 
 .hero-card__info-wrapper {
   display: flex;
+  flex-wrap: wrap;
   margin-top: auto;
   gap: 10px;
 
@@ -104,15 +122,24 @@
 
 .hero-card__info {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
+  max-width: 300px;
   padding: 13px 19px;
   font-size: 12px;
   line-height: 16px;
   border: 1px solid rgba($color-default-white, 0.5);
 }
 
+.hero-card__info-icon {
+  display: flex;
+  width: 12px;
+  height: 12px;
+}
+
 .hero-card__media-wrapper {
+  display: flex;
   position: absolute;
   right: 20px;
   bottom: 74px;
@@ -124,20 +151,41 @@
     height: 459px;
   }
 
+  &--audio {
+    width: 340px;
+    height: 220px;
+  }
+
   @include vp-1199 {
     position: relative;
     bottom: 0;
     right: 0;
     width: 442px;
     height: 300px;
+
+    &--primary {
+      height: 365px;
+    }
+
+    &--audio {
+      width: 340px;
+      height: 220px;
+    }
+  }
+
+  @include vp-767 {
+    display: none;
   }
 }
 
 .hero-card__poster-wrapper {
-  display: flex;
+  z-index: -1;
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.hero-card__media-wrapper img {
   pointer-events: none;
   user-select: none;
 }
@@ -179,6 +227,8 @@
   position: absolute;
   top: 50%;
   left: 55%;
+  width: 12px;
+  height: 22px;
   transform: translateX(-50%) translateY(-50%);
 }
 

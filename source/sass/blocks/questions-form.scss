@@ -8,36 +8,44 @@
   @include vp-1199 {
     min-height: 680px;
   }
+
+  @include vp-767 {
+    min-height: 620px;
+  }
 }
 
 .questions-form .container {
   display: grid;
+
+  @include vp-767 {
+    padding: 0 31px;
+  }
 }
 
 .questions-form__decor {
-  position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
-  display: flex;
   width: 100%;
   height: 100%;
-  pointer-events: none;
-  user-select: none;
-}
-
-.questions-form__decor img,
-.questions-form__decor picture {
-  display: flex;
-  width: 100%;
+  background-color: #2a3b38;
 }
 
 .questions-form__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
+  word-break: break-word;
+
+  @include vp-767 {
+    padding: 0 0 5px;
+  }
 }
 
-
 .questions-form__text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 
   &:not(:last-child) {
@@ -45,6 +53,10 @@
 
     @include vp-1199 {
       margin-bottom: 25px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 20px;
     }
   }
 }
@@ -67,6 +79,15 @@
       margin-bottom: 28px;
     }
   }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .questions-form__text-content p {
@@ -74,5 +95,11 @@
 
   @include vp-1199 {
     width: 300px;
+  }
+
+  @include vp-767 {
+    width: auto;
+    font-size: 12px;
+    line-height: 18px;
   }
 }

@@ -28,6 +28,17 @@
       width: 252.66px;
     }
   }
+
+  @include vp-767 {
+    width: 158.5px;
+    height: 260px;
+
+    &--two-rows {
+      grid-template-rows: 100px 157px;
+      gap: 3px;
+      width: 158.5px;
+    }
+  }
 }
 
 .gallery-card picture,

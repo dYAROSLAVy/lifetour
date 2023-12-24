@@ -9,6 +9,11 @@
     width: 270.84px;
     margin: 0 auto;
   }
+
+  @include vp-767 {
+    gap: 8px;
+    width: auto;
+  }
 }
 
 .form__input {
@@ -60,4 +65,13 @@
     height: 50px;
     padding: 15px 15.27px;
   }
+}
+
+
+.form__input span {
+  color: $color-torch-red;
+}
+
+.form button {
+  min-height: 56px;
 }

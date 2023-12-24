@@ -5,6 +5,7 @@ const reviewsSlider = () => {
 
   return new window.Swiper(swiperWrapper, {
     loop: true,
+    autoHeight: true,
     navigation: {
       nextEl: buttonNext,
       prevEl: buttonPrev,

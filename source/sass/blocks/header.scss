@@ -1,6 +1,8 @@
 .header {
   position: absolute;
   width: calc(100% - 40px);
+  min-height: 126px;
+  max-height: 186px;
   padding: 32px 20px;
   background-color: $color-navy-blue;
   color: $color-default-white;
@@ -11,20 +13,15 @@
   }
 
   @include vp-1199 {
+    min-height: 82px;
     width: 100%;
     left: 0;
     padding: 20px 45px;
   }
-}
 
-.header__burger {
-  display: none;
-  width: 26px;
-  height: 26px;
-
-  @include vp-1199 {
-    display: block;
-    margin-right: 100px;
+  @include vp-767 {
+    max-height: 140px;
+    padding: 15px 15px 13px;
   }
 }
 
@@ -34,14 +31,34 @@
   align-items: center;
 
   @include vp-1199 {
+    display: grid;
     justify-content: space-between;
+    grid-template-columns: auto;
+    grid-template-areas: "navigation logo tel";
+  }
+
+  @include vp-767 {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "navigation logo"
+                          ".  tel";
+    gap: 14px;
   }
 }
 
-.header__nav.nav {
-  margin: 0 auto;
+.header__logo {
+  grid-area: logo;
+}
 
-  @include vp-1199 {
-    display: none;
-  }
+.header__nav {
+  margin: 0 auto;
+  grid-area: navigation;
+}
+
+.header__nav .nav__list {
+  max-width: 584px;
+}
+
+.header__tel {
+  grid-area: tel;
 }
