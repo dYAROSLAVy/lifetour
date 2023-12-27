@@ -1,5 +1,5 @@
-import scrollLock from './scroll-lock';
-import {FocusLock} from './focus-lock';
+import scrollLock from '../utils/scroll-lock';
+import {FocusLock} from '../utils/focus-lock';
 
 export class Burger {
   constructor() {

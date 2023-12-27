@@ -45,6 +45,7 @@
 
   @include vp-1199 {
     text-align: center;
+
     &:not(:last-child) {
       margin-bottom: 27px;
     }

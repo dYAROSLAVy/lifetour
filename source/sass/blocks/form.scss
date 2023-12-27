@@ -42,6 +42,12 @@
     }
   }
 
+  &::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+  }
+
   &:focus,
   :not(:placeholder-shown) {
     border-color: $color-resolution-blue;
@@ -74,5 +80,5 @@
 }
 
 .form button {
-  min-height: 56px;
+  height: 56px;
 }

@@ -166,8 +166,8 @@
   }
 }
 
-.learning__process-item:nth-child(4n)>.process-card,
-.learning__process-item:nth-child(4n-1)>.process-card {
+.learning__process-item:nth-child(4n) > .process-card,
+.learning__process-item:nth-child(4n-1) > .process-card {
   @include vp-1199 {
     flex-direction: column-reverse;
     gap: 13px;
