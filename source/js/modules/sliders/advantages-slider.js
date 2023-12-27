@@ -8,13 +8,14 @@ const advantagesSlider = () => {
   const createSlider = () => {
     slider = new window.Swiper(swiperWrapper, {
       loop: false,
+      autoHeight: true,
       navigation: {
         nextEl: buttonNext,
         prevEl: buttonPrev,
       },
       breakpoints: {
         1200: {
-          slidesPerView: 'auto',
+          slidesPerView: 3,
           spaceBetween: 30,
           initialSlide: 1,
           allowTouchMove: false,
