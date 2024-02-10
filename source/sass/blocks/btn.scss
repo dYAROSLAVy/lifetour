@@ -9,6 +9,7 @@
   cursor: pointer;
   font-weight: 500;
   line-height: 16px;
+  user-select: none;
   transition: opacity $trans-default;
 
   &:disabled {

@@ -16,4 +16,8 @@
   @include hover-focus {
     color: $color-resolution-blue;
   }
+
+  @include active {
+    color: $color-default-white;
+  }
 }

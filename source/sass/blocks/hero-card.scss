@@ -26,7 +26,7 @@
   background-color: #6d8fb6;
 }
 
-.hero-card__text-content {
+.hero-card__inner {
   display: flex;
   flex-direction: column;
   min-height: 520px;
@@ -35,7 +35,26 @@
   @include vp-1199 {
     align-items: center;
     min-height: auto;
+  }
+}
+
+.hero-card__text-content {
+  &:not(:last-child) {
+    margin-bottom: 37px;
+  }
+
+  @include vp-1199 {
     text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
+  }
+
+  @include vp-767 {
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
   }
 }
 
@@ -73,26 +92,15 @@
   max-width: 39%;
   font-size: 17px;
 
-  &:not(:last-child) {
-    margin-bottom: 37px;
-  }
-
   @include vp-1199 {
     max-width: 70%;
-
-    &:not(:last-child) {
-      margin-bottom: 27px;
-    }
+    margin: 0 auto;
   }
 
   @include vp-767 {
     max-width: none;
     font-size: 15px;
     line-height: 20px;
-
-    &:not(:last-child) {
-      margin-bottom: 60px;
-    }
   }
 }
 
@@ -147,6 +155,7 @@
   height: 317px;
 
   &--primary {
+    z-index: -1;
     width: 410px;
     height: 459px;
   }

@@ -84,7 +84,7 @@
 
   @include active {
     &::after {
-      background-color:rgba($color-default-white, 0.5);
+      background-color: rgba($color-default-white, 0.5);
     }
   }
 }

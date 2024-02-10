@@ -1,11 +1,11 @@
-import {ScrollLock} from '../utils/scroll-lock';
+import scrollLock from '../utils/scroll-lock';
 import {FocusLock} from '../utils/focus-lock';
 
 export class Burger {
   constructor() {
     this._header = document.querySelector('[data-header]');
     this._burger = document.querySelector('[data-burger]');
-    this._scrollLock = new ScrollLock();
+    this._scrollLock = scrollLock;
     this._focusLock = new FocusLock();
     this._isMenuOpen = false;
 
