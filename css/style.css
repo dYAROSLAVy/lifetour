@@ -2245,7 +2245,9 @@ button,
   -ms-flex-align: center;
   align-items: center;
   gap: 10px;
-  width: auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 0 auto;
   padding: 10px;
   font-weight: 700;
@@ -2329,6 +2331,10 @@ button,
 
 .slider-controls .slider-controls__btn.focus-visible:focus {
   color: #1c3374;
+}
+
+.slider-controls .slider-controls__btn:active:not(.focus-visible):not(:disabled) {
+  color: #ffffff;
 }
 
 .tours-card {
