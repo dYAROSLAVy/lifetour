@@ -2582,6 +2582,12 @@ button,
   flex-wrap: wrap;
 }
 
+.learning__process-item .process-card {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
 .learning__decor {
   right: 0;
   bottom: -170px;
@@ -2654,9 +2660,6 @@ button,
   display: -ms-flexbox;
   display: flex;
   gap: 3px;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   width: 253.33px;
   padding: 3px 0 8px;
   -webkit-box-orient: vertical;
